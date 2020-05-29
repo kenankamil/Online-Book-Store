@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{783D0009-ED78-4266-9A4B-283C731DA626}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Online_Book_Store_v2</RootNamespace>
+    <AssemblyName>Online_Book_Store_v2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminControl.Designer.cs">
+      <DependentUpon>adminControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book.cs" />
+    <Compile Include="BookDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookDetailsForm.Designer.cs">
+      <DependentUpon>BookDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Customer.cs" />
+    <Compile Include="DataBase.cs" />
+    <Compile Include="FactoryPanelCreator.cs" />
+    <Compile Include="Fatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fatura.Designer.cs">
+      <DependentUpon>Fatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemToPurchase.cs" />
+    <Compile Include="KullanıcıGüncelleme.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KullanıcıGüncelleme.Designer.cs">
+      <DependentUpon>KullanıcıGüncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logger.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Magazine.cs" />
+    <Compile Include="MagazineDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MagazineDetailsForm.Designer.cs">
+      <DependentUpon>MagazineDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MagazinePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusicCD.cs" />
+    <Compile Include="MusicCDDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusicCDDetailsForm.Designer.cs">
+      <DependentUpon>MusicCDDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusicCDPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OrderInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderInformation.Designer.cs">
+      <DependentUpon>OrderInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingCardItemPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ShoppingCart.cs" />
+    <Compile Include="ShoppingCartPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShoppingCartPanel.Designer.cs">
+      <DependentUpon>ShoppingCartPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signUp.Designer.cs">
+      <DependentUpon>signUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signupUser.cs" />
+    <EmbeddedResource Include="adminControl.resx">
+      <DependentUpon>adminControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookDetailsForm.resx">
+      <DependentUpon>BookDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatura.resx">
+      <DependentUpon>Fatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullanıcıGüncelleme.resx">
+      <DependentUpon>KullanıcıGüncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MagazineDetailsForm.resx">
+      <DependentUpon>MagazineDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusicCDDetailsForm.resx">
+      <DependentUpon>MusicCDDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderInformation.resx">
+      <DependentUpon>OrderInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShoppingCardItemPanel.resx">
+      <DependentUpon>ShoppingCardItemPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShoppingCartPanel.resx">
+      <DependentUpon>ShoppingCartPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signUp.resx">
+      <DependentUpon>signUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\v-04-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\back-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\books-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\cart2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\cart-72-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\cd_music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\dasdas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\Esogu_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\home-5-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\icons8-paycheque-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\icons8-paycheque-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\magazine-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\magnifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\minimize-window-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\ooploginbackg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\payment-method.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\restore-window-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\settings-4-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\x-mark-5-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\asdasd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\eyeico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\ooploginbackg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\icons8-admin-settings-male-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\administrator-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gorseller\garbage_16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
