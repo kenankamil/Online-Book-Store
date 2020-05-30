@@ -170,16 +170,6 @@
             this.lblTarih.Size = new System.Drawing.Size(0, 20);
             this.lblTarih.TabIndex = 2;
             // 
-            // pbMaliyeBak
-            // 
-            this.pbMaliyeBak.Image = global::Online_Book_Store_v2.Properties.Resources.asdasd;
-            this.pbMaliyeBak.Location = new System.Drawing.Point(12, 12);
-            this.pbMaliyeBak.Name = "pbMaliyeBak";
-            this.pbMaliyeBak.Size = new System.Drawing.Size(209, 182);
-            this.pbMaliyeBak.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbMaliyeBak.TabIndex = 1;
-            this.pbMaliyeBak.TabStop = false;
-            // 
             // Fatura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

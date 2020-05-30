@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Online_Book_Store_v2
+{
+   public class Magazine : Product ///dergi class i olusturuldu, product ile inherit edilmiş halde.
+    {
+        public String issue;
+        public string description;
+       
+       
+        public override void printProperties()
+        {
+            MagazineDetailsForm magazineForm = new MagazineDetailsForm(this);
+            magazineForm.ShowDialog();
+            magazineForm.Dispose();
+            
+        }
+
+    }
+}
