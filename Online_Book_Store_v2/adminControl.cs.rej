@@ -1,0 +1,9 @@
+diff a/Online_Book_Store_v2/Online_Book_Store_v2/adminControl.cs b/Online_Book_Store_v2/Online_Book_Store_v2/adminControl.cs	(rejected hunks)
+@@ -593,7 +593,6 @@
+             tb_customerAddress.Text = cells[2].Value.ToString();
+             tb_customerMail.Text = cells[3].Value.ToString();
+             tb_customerPw.Text = cells[4].Value.ToString();
+-            if ((bool)cells[8].Value)
+             if ((int)cells[5].Value==1)
+                 cbIsRoot.Checked = true;
+             else
