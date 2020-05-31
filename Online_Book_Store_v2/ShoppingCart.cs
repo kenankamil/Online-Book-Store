@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Net.Mail;
+using System.Net;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.IO;
+using System.Drawing;
+using System.Drawing.Imaging;
 
 namespace Online_Book_Store_v2
 {
@@ -14,7 +22,7 @@ namespace Online_Book_Store_v2
 
         public List<ItemToPurchase> ItemsToPurchase;
         //Customerın tüm elemanlarını içerir
-        public Customer Customer;        
+        public Customer Customer;
         public double PaymentAmount;
         public int PaymentType;
         ShoppingCartPanel shoppingPanel;
@@ -93,6 +101,46 @@ namespace Online_Book_Store_v2
             PaymentAmount = 0;
             shoppingPanel.Visible = false;
             shoppingPanel.Dispose();
+        }
+        public void sendInvoicebySMS()
+        {
+            MessageBox.Show("Order information sent to your phone number and E-mail, Thanks for choosing us!", "E-mail and Phone Number", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        public void sendInvoidcebyEmail()
+        {
+            SmtpClient sc = new SmtpClient();
+
+            sc.Port = 587;
+            sc.Host = "smtp.gmail.com";
+            sc.EnableSsl = true;
+            sc.Credentials = new NetworkCredential("smtpicinmail@gmail.com", "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb");
+
+            MailMessage mail = new MailMessage();
+            mail.From = new MailAddress("smtpicinmail@gmail.com", "Information");
+            mail.Subject = "BOOK STORE";
+            mail.To.Add(MainForm.shoppingCart.Customer.Email);
+            mail.Attachments.Add(new Attachment(@"OrderInformation.pdf"));
+            mail.IsBodyHtml = true;
+            mail.Body = (" < p><p>You completed your order successfully.<p><p>Thanks for choosing us! <p>") + Environment.NewLine;
+
+            sc.Send(mail);
+        }
+        public void getPDF()
+        {
+            Document document = new Document();
+            using (var stream = new FileStream("OrderInformation.pdf", FileMode.Create, FileAccess.Write, FileShare.None))
+            {
+                PdfWriter.GetInstance(document, stream);
+                document.Open();
+                using (var imageStream = new FileStream("OrderInformation.jpeg", FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+                {
+                    var image = iTextSharp.text.Image.GetInstance(imageStream);
+                    float maxWidth = document.PageSize.Width - document.LeftMargin - document.RightMargin; float maxHeight = document.PageSize.Height - document.TopMargin - document.BottomMargin; if (image.Height > maxHeight || image.Width > maxWidth) image.ScaleToFit(maxWidth, maxHeight);
+                    document.Add(image);
+                }
+                document.Close();
+            }
+                System.Diagnostics.Process.Start(@"OrderInformation.pdf");
         }
     }
 }

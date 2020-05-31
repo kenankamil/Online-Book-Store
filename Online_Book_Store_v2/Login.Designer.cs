@@ -60,7 +60,7 @@
             this.txtboxEmail.Name = "txtboxEmail";
             this.txtboxEmail.Size = new System.Drawing.Size(195, 21);
             this.txtboxEmail.TabIndex = 2;
-            this.txtboxEmail.Text = "Username";
+            this.txtboxEmail.Text = "E-Mail";
             this.txtboxEmail.Click += new System.EventHandler(this.txtboxEmail_Click);
             this.txtboxEmail.Enter += new System.EventHandler(this.txtboxEmail_Enter);
             // 
