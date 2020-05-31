@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fatura));
             this.pnlFatura = new System.Windows.Forms.Panel();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblFiyatS = new System.Windows.Forms.Label();
@@ -67,7 +68,7 @@
             // lblDate
             // 
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblDate.Location = new System.Drawing.Point(586, 7);
+            this.lblDate.Location = new System.Drawing.Point(665, 534);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(172, 25);
             this.lblDate.TabIndex = 9;
@@ -77,7 +78,7 @@
             // 
             this.lblFiyatS.AutoSize = true;
             this.lblFiyatS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblFiyatS.Location = new System.Drawing.Point(729, 542);
+            this.lblFiyatS.Location = new System.Drawing.Point(696, 345);
             this.lblFiyatS.Name = "lblFiyatS";
             this.lblFiyatS.Size = new System.Drawing.Size(19, 20);
             this.lblFiyatS.TabIndex = 8;
@@ -87,7 +88,7 @@
             // 
             this.lblFiyat.AutoSize = true;
             this.lblFiyat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblFiyat.Location = new System.Drawing.Point(676, 542);
+            this.lblFiyat.Location = new System.Drawing.Point(643, 345);
             this.lblFiyat.Name = "lblFiyat";
             this.lblFiyat.Size = new System.Drawing.Size(47, 20);
             this.lblFiyat.TabIndex = 7;
@@ -102,7 +103,7 @@
             this.araToplam,
             this.toplam});
             this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(12, 200);
+            this.listView1.Location = new System.Drawing.Point(4, 3);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(813, 339);
             this.listView1.TabIndex = 6;
@@ -137,7 +138,7 @@
             // lblAdres
             // 
             this.lblAdres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblAdres.Location = new System.Drawing.Point(586, 55);
+            this.lblAdres.Location = new System.Drawing.Point(505, 400);
             this.lblAdres.Name = "lblAdres";
             this.lblAdres.Size = new System.Drawing.Size(141, 104);
             this.lblAdres.TabIndex = 5;
@@ -146,7 +147,7 @@
             // lblŞirket
             // 
             this.lblŞirket.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblŞirket.Location = new System.Drawing.Point(400, 25);
+            this.lblŞirket.Location = new System.Drawing.Point(330, 400);
             this.lblŞirket.Name = "lblŞirket";
             this.lblŞirket.Size = new System.Drawing.Size(169, 134);
             this.lblŞirket.TabIndex = 4;
@@ -155,7 +156,7 @@
             // lblAlıcı
             // 
             this.lblAlıcı.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblAlıcı.Location = new System.Drawing.Point(245, 25);
+            this.lblAlıcı.Location = new System.Drawing.Point(175, 400);
             this.lblAlıcı.Name = "lblAlıcı";
             this.lblAlıcı.Size = new System.Drawing.Size(149, 134);
             this.lblAlıcı.TabIndex = 3;
@@ -170,6 +171,15 @@
             this.lblTarih.Size = new System.Drawing.Size(0, 20);
             this.lblTarih.TabIndex = 2;
             // 
+            // pbMaliyeBak
+            // 
+            this.pbMaliyeBak.Image = ((System.Drawing.Image)(resources.GetObject("pbMaliyeBak.Image")));
+            this.pbMaliyeBak.Location = new System.Drawing.Point(12, 384);
+            this.pbMaliyeBak.Name = "pbMaliyeBak";
+            this.pbMaliyeBak.Size = new System.Drawing.Size(150, 150);
+            this.pbMaliyeBak.TabIndex = 10;
+            this.pbMaliyeBak.TabStop = false;
+            // 
             // Fatura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -180,7 +190,6 @@
             this.MinimizeBox = false;
             this.Name = "Fatura";
             this.Text = "Fatura";
-
             this.pnlFatura.ResumeLayout(false);
             this.pnlFatura.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMaliyeBak)).EndInit();

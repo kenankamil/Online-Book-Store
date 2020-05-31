@@ -134,7 +134,7 @@
             // 
             this.lblSummary.BackColor = System.Drawing.SystemColors.Window;
             this.lblSummary.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSummary.ForeColor = System.Drawing.Color.Silver;
+            this.lblSummary.ForeColor = System.Drawing.Color.Black;
             this.lblSummary.Location = new System.Drawing.Point(11, 23);
             this.lblSummary.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSummary.Name = "lblSummary";
@@ -256,7 +256,7 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(373, 462);
+            this.ClientSize = new System.Drawing.Size(374, 459);
             this.Controls.Add(this.nupQuantity);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnltop);

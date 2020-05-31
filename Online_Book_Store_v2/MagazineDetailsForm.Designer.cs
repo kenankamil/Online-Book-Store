@@ -121,7 +121,7 @@
             // 
             this.lblSum.BackColor = System.Drawing.SystemColors.Window;
             this.lblSum.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSum.ForeColor = System.Drawing.Color.Silver;
+            this.lblSum.ForeColor = System.Drawing.Color.Black;
             this.lblSum.Location = new System.Drawing.Point(14, 26);
             this.lblSum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSum.Name = "lblSum";
@@ -203,6 +203,7 @@
             this.label1.Size = new System.Drawing.Size(152, 22);
             this.label1.TabIndex = 25;
             this.label1.Text = "Magazine Details";
+            this.label1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblTop_MouseMove);
             // 
             // panel1
             // 
