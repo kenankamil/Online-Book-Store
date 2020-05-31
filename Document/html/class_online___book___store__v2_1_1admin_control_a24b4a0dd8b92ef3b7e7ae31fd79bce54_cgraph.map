@@ -1,0 +1,4 @@
+<map id="Online_Book_Store_v2.adminControl.refreshPanel" name="Online_Book_Store_v2.adminControl.refreshPanel">
+<area shape="rect" id="node1" title="Refreshing panels for new coming datas." alt="" coords="5,5,197,47"/>
+<area shape="rect" id="node2" href="$class_online___book___store__v2_1_1_data_base.html#a066d891126f979a4c17d23b57085718a" title="If object equals null, means no object, then creates an object and returns it." alt="" coords="245,5,429,47"/>
+</map>

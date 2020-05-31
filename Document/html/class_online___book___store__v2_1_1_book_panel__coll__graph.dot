@@ -1,0 +1,15 @@
+digraph "Online_Book_Store_v2.BookPanel"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Online_Book_Store_v2.Book\lPanel\n|+ Author\l+ Publisher\l+ Price1\l+ Price2\l|+ BookPanel()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="inheritance product panel to book panel"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{ProductPanel\n|+ name\l+ picBox\l+ magnifier\l+ picAdd\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_online___book___store__v2_1_1_product_panel.html",tooltip="Base panel"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 [label="{Panel\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +book" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{Online_Book_Store_v2.Book\n|+ author\l+ publisher\l+ ISBN\l+ page\l+ summary\l|+ printProperties()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_online___book___store__v2_1_1_book.html",tooltip="Book class's attributes and methods"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node5 [label="{Product\n|+ name\l+ price\l+ id\l+ type\l+ image\l+ sale\l+ discountedPrice\l|+ printProperties()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_online___book___store__v2_1_1_product.html",tooltip="Base class that contains all products properties"];
+}

@@ -1,0 +1,12 @@
+digraph "Online_Book_Store_v2.MagazineDetailsForm.Drag_Form"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Online_Book_Store_v2.Magazine\lDetailsForm.Drag_Form",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Online_Book_Store_v2.Magazine\lDetailsForm.ReleaseCapture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_online___book___store__v2_1_1_magazine_details_form.html#adf6beb183bd90384af683a4643033505",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Online_Book_Store_v2.Magazine\lDetailsForm.SendMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_online___book___store__v2_1_1_magazine_details_form.html#a62fcc10f5ddb6ddf9d2deb9cc346b07d",tooltip="To move the Form."];
+}

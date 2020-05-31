@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,111,60,138"/>
+<area shape="rect" id="node2" href="$class_online___book___store__v2_1_1_product_panel.html" title="Base panel" alt="" coords="112,71,315,112"/>
+<area shape="rect" id="node6" href="$class_online___book___store__v2_1_1_shopping_card_item_panel.html" title=" " alt="" coords="108,136,319,177"/>
+<area shape="rect" id="node3" href="$class_online___book___store__v2_1_1_book_panel.html" title="inheritance product panel to book panel" alt="" coords="380,5,567,47"/>
+<area shape="rect" id="node4" href="$class_online___book___store__v2_1_1_magazine_panel.html" title="Magazine panel to shows detailed information." alt="" coords="367,71,580,112"/>
+<area shape="rect" id="node5" href="$class_online___book___store__v2_1_1_music_c_d_panel.html" title="Panel that shows the products" alt="" coords="377,136,569,177"/>
+</map>

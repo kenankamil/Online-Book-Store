@@ -1,0 +1,6 @@
+<map id="Online_Book_Store_v2.Product" name="Online_Book_Store_v2.Product">
+<area shape="rect" id="node1" title="Base class that contains all products properties" alt="" coords="221,5,424,171"/>
+<area shape="rect" id="node2" href="$class_online___book___store__v2_1_1_book.html" title="Book class&#39;s attributes and methods" alt="" coords="5,219,192,355"/>
+<area shape="rect" id="node3" href="$class_online___book___store__v2_1_1_magazine.html" title="Magazine Class get created." alt="" coords="216,241,429,333"/>
+<area shape="rect" id="node4" href="$class_online___book___store__v2_1_1_music_c_d.html" title="MusicCD Class" alt="" coords="453,233,664,340"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Online_Book_Store_v2.Customer.getInstance" name="Online_Book_Store_v2.Customer.getInstance">
+<area shape="rect" id="node1" title=" " alt="" coords="288,100,523,141"/>
+<area shape="rect" id="node2" href="$class_online___book___store__v2_1_1_data_base.html#a07d10023dd397823efdf460161f4bfac" title="Customer informations checks from database." alt="" coords="31,5,215,47"/>
+<area shape="rect" id="node3" href="$class_online___book___store__v2_1_1_fatura.html#a3dab439fb4a855e53b6fa8cf6c81cd4b" title="Shows the invoice." alt="" coords="23,71,222,112"/>
+<area shape="rect" id="node4" href="$class_online___book___store__v2_1_1_logger.html#ae8555ba910890bfc45d8e34e3f53150a" title=" " alt="" coords="5,137,240,163"/>
+<area shape="rect" id="node5" href="$class_online___book___store__v2_1_1_main_form.html#a65a05cc2f6750e1de6a2d4cae6da4910" title=" " alt="" coords="30,188,215,229"/>
+</map>
