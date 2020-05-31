@@ -104,7 +104,7 @@ namespace Online_Book_Store_v2
                 /// Image issues
                 try
                 {
-                    book.image = Image.FromFile(Application.StartupPath + @"\Resources" + (string)sqlDataReader["IMAGEDEST"] + ".png");
+                    book.image = Image.FromFile(Application.StartupPath + @"\Resources\" + (string)sqlDataReader["IMAGEDEST"] + ".png");
                 }
                 catch (Exception)
                 {
@@ -141,7 +141,7 @@ namespace Online_Book_Store_v2
                 ///Image issues
                 try
                 {
-                    musicCd.image = Image.FromFile(Application.StartupPath + @"\Resources" + (string)sqlDataReader["IMAGEDEST"] + ".png");
+                    musicCd.image = Image.FromFile(Application.StartupPath + @"\Resources\" + (string)sqlDataReader["IMAGEDEST"] + ".png");
                 }
                 catch (Exception)
                 {
@@ -178,7 +178,7 @@ namespace Online_Book_Store_v2
                 ///Image issues
                 try
                 {
-                    magazine.image = Image.FromFile(Application.StartupPath + @"\Resources" + (string)sqlDataReader["IMAGEDEST"] + ".png");
+                    magazine.image = Image.FromFile(Application.StartupPath + @"\Resources\" + (string)sqlDataReader["IMAGEDEST"] + ".png");
                 }
                 catch (Exception)
                 {
