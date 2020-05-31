@@ -1,0 +1,13 @@
+digraph "Online_Book_Store_v2.MainForm"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Online_Book_Store_v2.MainForm\n|+ WM_NCLBUTTONDOWN\l+ HT_CAPTION\l|+ MainForm()\l+ SendMessage()\l+ ReleaseCapture()\l+ Drag_Form()\l# Dispose()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node2 [label="{Form\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +shoppingCart" ,arrowhead="odiamond"];
+  Node3 [label="{Online_Book_Store_v2.ShoppingCart\n|+ ItemsToPurchase\l+ PaymentAmount\l+ PaymentType\l|+ ShoppingCart()\l+ PlaceOrder()\l+ removeProduct()\l+ refreshPanel()\l+ printProducts()\l+ CancelOrder()\l+ sendInvoicebySMS()\l+ sendInvoidcebyEmail()\l+ getPDF()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_online___book___store__v2_1_1_shopping_cart.html",tooltip="Contains products that added to shopping cart"];
+  Node4 -> Node3 [color="grey25",fontsize="10",style="solid",label=" +Customer" ,arrowhead="odiamond"];
+  Node4 [label="{Online_Book_Store_v2.Customer\n|+ PurchCount\l+ Id\l+ Name\l+ Adress\l+ Email\l+ Password\l+ IsAdmin\l+ Username\l|+ printCustomerDetails()\l+ saveCustomer()\l+ printCustomerPurchases()\l+ getInstance()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_online___book___store__v2_1_1_customer.html",tooltip="Customer class's attributes and methods"];
+}

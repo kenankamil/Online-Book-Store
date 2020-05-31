@@ -1,0 +1,5 @@
+<map id="Online_Book_Store_v2.ShoppingCartPanel.fillPanel" name="Online_Book_Store_v2.ShoppingCartPanel.fillPanel">
+<area shape="rect" id="node1" title="Function that adds products to panel" alt="" coords="523,5,733,47"/>
+<area shape="rect" id="node2" href="$class_online___book___store__v2_1_1_shopping_cart.html#ac8ea690bc1f720f2b23e7b724be2d1e1" title="Refreshes the Panel" alt="" coords="264,5,475,47"/>
+<area shape="rect" id="node3" href="$class_online___book___store__v2_1_1_shopping_cart.html#a66ec6d8bf7f318f0b47ae739a3752904" title="Deletes product from list" alt="" coords="5,5,216,47"/>
+</map>

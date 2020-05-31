@@ -1,0 +1,12 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,246,57,273"/>
+<area shape="rect" id="node2" href="$class_online___book___store__v2_1_1admin_control.html" title="Ths creates the general structure of the admin panel. Uses the datagridviews to user/product manageme..." alt="" coords="117,5,309,47"/>
+<area shape="rect" id="node3" href="$class_online___book___store__v2_1_1_book_details_form.html" title=" " alt="" coords="119,71,306,112"/>
+<area shape="rect" id="node4" href="$class_online___book___store__v2_1_1_fatura.html" title="Fatura Class" alt="" coords="115,137,310,163"/>
+<area shape="rect" id="node5" href="$class_online___book___store__v2_1_1_login.html" title=" " alt="" coords="119,187,307,214"/>
+<area shape="rect" id="node6" href="$class_online___book___store__v2_1_1_magazine_details_form.html" title=" " alt="" coords="106,239,319,280"/>
+<area shape="rect" id="node7" href="$class_online___book___store__v2_1_1_main_form.html" title=" " alt="" coords="105,305,320,331"/>
+<area shape="rect" id="node8" href="$class_online___book___store__v2_1_1_music_c_d_details_form.html" title=" " alt="" coords="117,356,309,397"/>
+<area shape="rect" id="node9" href="$class_online___book___store__v2_1_1_order_information.html" title=" " alt="" coords="118,421,307,463"/>
+<area shape="rect" id="node10" href="$class_online___book___store__v2_1_1sign_up.html" title="SignUp Form" alt="" coords="114,487,311,514"/>
+</map>

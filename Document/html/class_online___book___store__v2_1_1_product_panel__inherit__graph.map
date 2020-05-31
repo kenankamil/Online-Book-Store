@@ -1,0 +1,7 @@
+<map id="Online_Book_Store_v2.ProductPanel" name="Online_Book_Store_v2.ProductPanel">
+<area shape="rect" id="node1" title="Base panel" alt="" coords="221,131,424,267"/>
+<area shape="rect" id="node3" href="$class_online___book___store__v2_1_1_book_panel.html" title="inheritance product panel to book panel" alt="" coords="5,315,192,465"/>
+<area shape="rect" id="node4" href="$class_online___book___store__v2_1_1_magazine_panel.html" title="Magazine panel to shows detailed information." alt="" coords="216,315,429,465"/>
+<area shape="rect" id="node5" href="$class_online___book___store__v2_1_1_music_c_d_panel.html" title="Panel that shows the products" alt="" coords="453,315,645,465"/>
+<area shape="rect" id="node2" title=" " alt="" coords="295,5,350,83"/>
+</map>

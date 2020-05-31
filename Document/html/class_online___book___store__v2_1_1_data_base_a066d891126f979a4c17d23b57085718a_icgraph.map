@@ -1,0 +1,5 @@
+<map id="Online_Book_Store_v2.DataBase.getInstance" name="Online_Book_Store_v2.DataBase.getInstance">
+<area shape="rect" id="node1" title="If object equals null, means no object, then creates an object and returns it." alt="" coords="245,39,429,80"/>
+<area shape="rect" id="node2" href="$class_online___book___store__v2_1_1admin_control.html#ac3514ddd57847e17db6374956918ccff" title="This codes runes when the form get loaded." alt="" coords="5,5,197,47"/>
+<area shape="rect" id="node3" href="$class_online___book___store__v2_1_1admin_control.html#a24b4a0dd8b92ef3b7e7ae31fd79bce54" title="Refreshing panels for new coming datas." alt="" coords="5,71,197,112"/>
+</map>

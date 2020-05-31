@@ -1,0 +1,136 @@
+\hypertarget{class_online___book___store__v2_1_1_data_base}{}\doxysection{Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Data\+Base Class Reference}
+\label{class_online___book___store__v2_1_1_data_base}\index{Online\_Book\_Store\_v2.DataBase@{Online\_Book\_Store\_v2.DataBase}}
+
+
+Database class\textquotesingle{}s attributes and methods  
+
+
+
+
+Collaboration diagram for Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Data\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{class_online___book___store__v2_1_1_data_base__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_online___book___store__v2_1_1_data_base_a434ed86fa903076e847c6f77a7259dba}{Customer\+Update}} (\mbox{\hyperlink{class_online___book___store__v2_1_1_customer}{Customer}} customer)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_online___book___store__v2_1_1_customer}{Customer}} informations updates. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_online___book___store__v2_1_1_customer}{Customer}} \mbox{\hyperlink{class_online___book___store__v2_1_1_data_base_a07d10023dd397823efdf460161f4bfac}{Customer\+Handler}} (string email, string password)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_online___book___store__v2_1_1_customer}{Customer}} informations checks from database. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_online___book___store__v2_1_1_product}{Product}} $>$ \mbox{\hyperlink{class_online___book___store__v2_1_1_data_base_a2aca82d4a4cba81ad1eb3e848c05ea22}{Book\+Loader}} ()
+\begin{DoxyCompactList}\small\item\em Books gets load. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_online___book___store__v2_1_1_product}{Product}} $>$ \mbox{\hyperlink{class_online___book___store__v2_1_1_data_base_ade59bd9c1f613dbbbab0edc93214ed14}{Music\+C\+D\+Loader}} ()
+\begin{DoxyCompactList}\small\item\em Musics gets Load. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_online___book___store__v2_1_1_product}{Product}} $>$ \mbox{\hyperlink{class_online___book___store__v2_1_1_data_base_a74b05dd27a7cec2b3d6252cef41b2a65}{Magazine\+Loader}} ()
+\begin{DoxyCompactList}\small\item\em Magazines gets load. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_online___book___store__v2_1_1_data_base_a6f5ac823e345e524993e999d73d67a93}{Db\+Update}} (string\mbox{[}$\,$\mbox{]} values, string command)
+\begin{DoxyCompactList}\small\item\em database update \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_online___book___store__v2_1_1_data_base}{Data\+Base}} \mbox{\hyperlink{class_online___book___store__v2_1_1_data_base_a066d891126f979a4c17d23b57085718a}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em If object equals null, means no object, then creates an object and returns it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Database class\textquotesingle{}s attributes and methods 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_online___book___store__v2_1_1_data_base_a2aca82d4a4cba81ad1eb3e848c05ea22}\label{class_online___book___store__v2_1_1_data_base_a2aca82d4a4cba81ad1eb3e848c05ea22}} 
+\index{Online\_Book\_Store\_v2.DataBase@{Online\_Book\_Store\_v2.DataBase}!BookLoader@{BookLoader}}
+\index{BookLoader@{BookLoader}!Online\_Book\_Store\_v2.DataBase@{Online\_Book\_Store\_v2.DataBase}}
+\doxysubsubsection{\texorpdfstring{BookLoader()}{BookLoader()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_online___book___store__v2_1_1_product}{Product}}$>$ Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Data\+Base.\+Book\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Books gets load. 
+
+Image issues\mbox{\Hypertarget{class_online___book___store__v2_1_1_data_base_a07d10023dd397823efdf460161f4bfac}\label{class_online___book___store__v2_1_1_data_base_a07d10023dd397823efdf460161f4bfac}} 
+\index{Online\_Book\_Store\_v2.DataBase@{Online\_Book\_Store\_v2.DataBase}!CustomerHandler@{CustomerHandler}}
+\index{CustomerHandler@{CustomerHandler}!Online\_Book\_Store\_v2.DataBase@{Online\_Book\_Store\_v2.DataBase}}
+\doxysubsubsection{\texorpdfstring{CustomerHandler()}{CustomerHandler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_online___book___store__v2_1_1_customer}{Customer}} Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Data\+Base.\+Customer\+Handler (\begin{DoxyParamCaption}\item[{string}]{email,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_online___book___store__v2_1_1_customer}{Customer}} informations checks from database. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_online___book___store__v2_1_1_data_base_a07d10023dd397823efdf460161f4bfac_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_online___book___store__v2_1_1_data_base_a434ed86fa903076e847c6f77a7259dba}\label{class_online___book___store__v2_1_1_data_base_a434ed86fa903076e847c6f77a7259dba}} 
+\index{Online\_Book\_Store\_v2.DataBase@{Online\_Book\_Store\_v2.DataBase}!CustomerUpdate@{CustomerUpdate}}
+\index{CustomerUpdate@{CustomerUpdate}!Online\_Book\_Store\_v2.DataBase@{Online\_Book\_Store\_v2.DataBase}}
+\doxysubsubsection{\texorpdfstring{CustomerUpdate()}{CustomerUpdate()}}
+{\footnotesize\ttfamily void Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Data\+Base.\+Customer\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_online___book___store__v2_1_1_customer}{Customer}}}]{customer }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_online___book___store__v2_1_1_customer}{Customer}} informations updates. 
+
+\mbox{\Hypertarget{class_online___book___store__v2_1_1_data_base_a6f5ac823e345e524993e999d73d67a93}\label{class_online___book___store__v2_1_1_data_base_a6f5ac823e345e524993e999d73d67a93}} 
+\index{Online\_Book\_Store\_v2.DataBase@{Online\_Book\_Store\_v2.DataBase}!DbUpdate@{DbUpdate}}
+\index{DbUpdate@{DbUpdate}!Online\_Book\_Store\_v2.DataBase@{Online\_Book\_Store\_v2.DataBase}}
+\doxysubsubsection{\texorpdfstring{DbUpdate()}{DbUpdate()}}
+{\footnotesize\ttfamily void Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Data\+Base.\+Db\+Update (\begin{DoxyParamCaption}\item[{string\mbox{[}$\,$\mbox{]}}]{values,  }\item[{string}]{command }\end{DoxyParamCaption})}
+
+
+
+database update 
+
+\mbox{\Hypertarget{class_online___book___store__v2_1_1_data_base_a066d891126f979a4c17d23b57085718a}\label{class_online___book___store__v2_1_1_data_base_a066d891126f979a4c17d23b57085718a}} 
+\index{Online\_Book\_Store\_v2.DataBase@{Online\_Book\_Store\_v2.DataBase}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!Online\_Book\_Store\_v2.DataBase@{Online\_Book\_Store\_v2.DataBase}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_online___book___store__v2_1_1_data_base}{Data\+Base}} Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Data\+Base.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+If object equals null, means no object, then creates an object and returns it. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_online___book___store__v2_1_1_data_base_a066d891126f979a4c17d23b57085718a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_online___book___store__v2_1_1_data_base_a74b05dd27a7cec2b3d6252cef41b2a65}\label{class_online___book___store__v2_1_1_data_base_a74b05dd27a7cec2b3d6252cef41b2a65}} 
+\index{Online\_Book\_Store\_v2.DataBase@{Online\_Book\_Store\_v2.DataBase}!MagazineLoader@{MagazineLoader}}
+\index{MagazineLoader@{MagazineLoader}!Online\_Book\_Store\_v2.DataBase@{Online\_Book\_Store\_v2.DataBase}}
+\doxysubsubsection{\texorpdfstring{MagazineLoader()}{MagazineLoader()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_online___book___store__v2_1_1_product}{Product}}$>$ Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Data\+Base.\+Magazine\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Magazines gets load. 
+
+Image issues\mbox{\Hypertarget{class_online___book___store__v2_1_1_data_base_ade59bd9c1f613dbbbab0edc93214ed14}\label{class_online___book___store__v2_1_1_data_base_ade59bd9c1f613dbbbab0edc93214ed14}} 
+\index{Online\_Book\_Store\_v2.DataBase@{Online\_Book\_Store\_v2.DataBase}!MusicCDLoader@{MusicCDLoader}}
+\index{MusicCDLoader@{MusicCDLoader}!Online\_Book\_Store\_v2.DataBase@{Online\_Book\_Store\_v2.DataBase}}
+\doxysubsubsection{\texorpdfstring{MusicCDLoader()}{MusicCDLoader()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_online___book___store__v2_1_1_product}{Product}}$>$ Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Data\+Base.\+Music\+C\+D\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Musics gets Load. 
+
+Image issues
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Users/kenan/\+One\+Drive/\+Masaüstü/oop2rep/oop-\/2/\+Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2/\mbox{\hyperlink{_data_base_8cs}{Data\+Base.\+cs}}\end{DoxyCompactItemize}

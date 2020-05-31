@@ -1,0 +1,233 @@
+\hypertarget{class_online___book___store__v2_1_1_shopping_cart}{}\doxysection{Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Shopping\+Cart Class Reference}
+\label{class_online___book___store__v2_1_1_shopping_cart}\index{Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}}
+
+
+Contains products that added to shopping cart  
+
+
+
+
+Collaboration diagram for Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Shopping\+Cart\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{class_online___book___store__v2_1_1_shopping_cart__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_online___book___store__v2_1_1_shopping_cart_add5f1824e3aa5467e4d8f46bccef495d}{Shopping\+Cart}} ()
+\begin{DoxyCompactList}\small\item\em Constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_online___book___store__v2_1_1_shopping_cart_a1a820789247cc6242e03884a6ace72f8}{Place\+Order}} (string shipment\+Adress, string email)
+\begin{DoxyCompactList}\small\item\em Shows invoice \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_online___book___store__v2_1_1_shopping_cart_a66ec6d8bf7f318f0b47ae739a3752904}{remove\+Product}} (\mbox{\hyperlink{class_online___book___store__v2_1_1_item_to_purchase}{Item\+To\+Purchase}} item)
+\begin{DoxyCompactList}\small\item\em Deletes product from list \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_online___book___store__v2_1_1_shopping_cart_ac8ea690bc1f720f2b23e7b724be2d1e1}{refresh\+Panel}} ()
+\begin{DoxyCompactList}\small\item\em Refreshes the Panel \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_online___book___store__v2_1_1_shopping_card_item_panel}{Shopping\+Card\+Item\+Panel}} $>$ \mbox{\hyperlink{class_online___book___store__v2_1_1_shopping_cart_a0daeab1db36597ab28d730c09f7313b1}{print\+Products}} ()
+\begin{DoxyCompactList}\small\item\em Shows the products \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_online___book___store__v2_1_1_shopping_cart_a80ef9ac9e1cd77e71192309edae08251}{Cancel\+Order}} ()
+\begin{DoxyCompactList}\small\item\em Cancels all Orders \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_online___book___store__v2_1_1_shopping_cart_a1fee9292006e6b6723adca46ea08d6a8}{send\+Invoiceby\+S\+MS}} ()
+\item 
+void \mbox{\hyperlink{class_online___book___store__v2_1_1_shopping_cart_a4890aeed71f9a5001afeb94bfb0be490}{send\+Invoidceby\+Email}} ()
+\item 
+void \mbox{\hyperlink{class_online___book___store__v2_1_1_shopping_cart_a8770fc4609c7e2f84b824de51c16df57}{get\+P\+DF}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_online___book___store__v2_1_1_item_to_purchase}{Item\+To\+Purchase}} $>$ \mbox{\hyperlink{class_online___book___store__v2_1_1_shopping_cart_a1ea3a64caa62c6e47e6c44113fc03623}{Items\+To\+Purchase}}
+\item 
+\mbox{\hyperlink{class_online___book___store__v2_1_1_customer}{Customer}} \mbox{\hyperlink{class_online___book___store__v2_1_1_shopping_cart_a6aad893973b8c71116e6b80c368a27b1}{Customer}}
+\item 
+double \mbox{\hyperlink{class_online___book___store__v2_1_1_shopping_cart_acc7e23da4a01a17ba93334256fc7f723}{Payment\+Amount}}
+\item 
+int \mbox{\hyperlink{class_online___book___store__v2_1_1_shopping_cart_a8edf88d7f260713e22f4f16279cba82e}{Payment\+Type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains products that added to shopping cart 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_online___book___store__v2_1_1_shopping_cart_add5f1824e3aa5467e4d8f46bccef495d}\label{class_online___book___store__v2_1_1_shopping_cart_add5f1824e3aa5467e4d8f46bccef495d}} 
+\index{Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}!ShoppingCart@{ShoppingCart}}
+\index{ShoppingCart@{ShoppingCart}!Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}}
+\doxysubsubsection{\texorpdfstring{ShoppingCart()}{ShoppingCart()}}
+{\footnotesize\ttfamily Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Shopping\+Cart.\+Shopping\+Cart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_online___book___store__v2_1_1_shopping_cart_a80ef9ac9e1cd77e71192309edae08251}\label{class_online___book___store__v2_1_1_shopping_cart_a80ef9ac9e1cd77e71192309edae08251}} 
+\index{Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}!CancelOrder@{CancelOrder}}
+\index{CancelOrder@{CancelOrder}!Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}}
+\doxysubsubsection{\texorpdfstring{CancelOrder()}{CancelOrder()}}
+{\footnotesize\ttfamily void Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Shopping\+Cart.\+Cancel\+Order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cancels all Orders 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_online___book___store__v2_1_1_shopping_cart_a80ef9ac9e1cd77e71192309edae08251_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_online___book___store__v2_1_1_shopping_cart_a8770fc4609c7e2f84b824de51c16df57}\label{class_online___book___store__v2_1_1_shopping_cart_a8770fc4609c7e2f84b824de51c16df57}} 
+\index{Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}!getPDF@{getPDF}}
+\index{getPDF@{getPDF}!Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}}
+\doxysubsubsection{\texorpdfstring{getPDF()}{getPDF()}}
+{\footnotesize\ttfamily void Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Shopping\+Cart.\+get\+P\+DF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_online___book___store__v2_1_1_shopping_cart_a1a820789247cc6242e03884a6ace72f8}\label{class_online___book___store__v2_1_1_shopping_cart_a1a820789247cc6242e03884a6ace72f8}} 
+\index{Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}!PlaceOrder@{PlaceOrder}}
+\index{PlaceOrder@{PlaceOrder}!Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}}
+\doxysubsubsection{\texorpdfstring{PlaceOrder()}{PlaceOrder()}}
+{\footnotesize\ttfamily void Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Shopping\+Cart.\+Place\+Order (\begin{DoxyParamCaption}\item[{string}]{shipment\+Adress,  }\item[{string}]{email }\end{DoxyParamCaption})}
+
+
+
+Shows invoice 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shipment\+Adress} & \\
+\hline
+{\em email} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_online___book___store__v2_1_1_shopping_cart_a1a820789247cc6242e03884a6ace72f8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_online___book___store__v2_1_1_shopping_cart_a0daeab1db36597ab28d730c09f7313b1}\label{class_online___book___store__v2_1_1_shopping_cart_a0daeab1db36597ab28d730c09f7313b1}} 
+\index{Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}!printProducts@{printProducts}}
+\index{printProducts@{printProducts}!Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}}
+\doxysubsubsection{\texorpdfstring{printProducts()}{printProducts()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_online___book___store__v2_1_1_shopping_card_item_panel}{Shopping\+Card\+Item\+Panel}}$>$ Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Shopping\+Cart.\+print\+Products (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Shows the products 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_online___book___store__v2_1_1_shopping_cart_a0daeab1db36597ab28d730c09f7313b1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_online___book___store__v2_1_1_shopping_cart_ac8ea690bc1f720f2b23e7b724be2d1e1}\label{class_online___book___store__v2_1_1_shopping_cart_ac8ea690bc1f720f2b23e7b724be2d1e1}} 
+\index{Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}!refreshPanel@{refreshPanel}}
+\index{refreshPanel@{refreshPanel}!Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}}
+\doxysubsubsection{\texorpdfstring{refreshPanel()}{refreshPanel()}}
+{\footnotesize\ttfamily void Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Shopping\+Cart.\+refresh\+Panel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Refreshes the Panel 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_online___book___store__v2_1_1_shopping_cart_ac8ea690bc1f720f2b23e7b724be2d1e1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_online___book___store__v2_1_1_shopping_cart_ac8ea690bc1f720f2b23e7b724be2d1e1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_online___book___store__v2_1_1_shopping_cart_a66ec6d8bf7f318f0b47ae739a3752904}\label{class_online___book___store__v2_1_1_shopping_cart_a66ec6d8bf7f318f0b47ae739a3752904}} 
+\index{Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}!removeProduct@{removeProduct}}
+\index{removeProduct@{removeProduct}!Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}}
+\doxysubsubsection{\texorpdfstring{removeProduct()}{removeProduct()}}
+{\footnotesize\ttfamily void Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Shopping\+Cart.\+remove\+Product (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_online___book___store__v2_1_1_item_to_purchase}{Item\+To\+Purchase}}}]{item }\end{DoxyParamCaption})}
+
+
+
+Deletes product from list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_online___book___store__v2_1_1_shopping_cart_a66ec6d8bf7f318f0b47ae739a3752904_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_online___book___store__v2_1_1_shopping_cart_a1fee9292006e6b6723adca46ea08d6a8}\label{class_online___book___store__v2_1_1_shopping_cart_a1fee9292006e6b6723adca46ea08d6a8}} 
+\index{Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}!sendInvoicebySMS@{sendInvoicebySMS}}
+\index{sendInvoicebySMS@{sendInvoicebySMS}!Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}}
+\doxysubsubsection{\texorpdfstring{sendInvoicebySMS()}{sendInvoicebySMS()}}
+{\footnotesize\ttfamily void Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Shopping\+Cart.\+send\+Invoiceby\+S\+MS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_online___book___store__v2_1_1_shopping_cart_a4890aeed71f9a5001afeb94bfb0be490}\label{class_online___book___store__v2_1_1_shopping_cart_a4890aeed71f9a5001afeb94bfb0be490}} 
+\index{Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}!sendInvoidcebyEmail@{sendInvoidcebyEmail}}
+\index{sendInvoidcebyEmail@{sendInvoidcebyEmail}!Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}}
+\doxysubsubsection{\texorpdfstring{sendInvoidcebyEmail()}{sendInvoidcebyEmail()}}
+{\footnotesize\ttfamily void Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Shopping\+Cart.\+send\+Invoidceby\+Email (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_online___book___store__v2_1_1_shopping_cart_a6aad893973b8c71116e6b80c368a27b1}\label{class_online___book___store__v2_1_1_shopping_cart_a6aad893973b8c71116e6b80c368a27b1}} 
+\index{Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}!Customer@{Customer}}
+\index{Customer@{Customer}!Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}}
+\doxysubsubsection{\texorpdfstring{Customer}{Customer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_online___book___store__v2_1_1_customer}{Customer}} Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Shopping\+Cart.\+Customer}
+
+\mbox{\Hypertarget{class_online___book___store__v2_1_1_shopping_cart_a1ea3a64caa62c6e47e6c44113fc03623}\label{class_online___book___store__v2_1_1_shopping_cart_a1ea3a64caa62c6e47e6c44113fc03623}} 
+\index{Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}!ItemsToPurchase@{ItemsToPurchase}}
+\index{ItemsToPurchase@{ItemsToPurchase}!Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}}
+\doxysubsubsection{\texorpdfstring{ItemsToPurchase}{ItemsToPurchase}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_online___book___store__v2_1_1_item_to_purchase}{Item\+To\+Purchase}}$>$ Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Shopping\+Cart.\+Items\+To\+Purchase}
+
+\mbox{\Hypertarget{class_online___book___store__v2_1_1_shopping_cart_acc7e23da4a01a17ba93334256fc7f723}\label{class_online___book___store__v2_1_1_shopping_cart_acc7e23da4a01a17ba93334256fc7f723}} 
+\index{Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}!PaymentAmount@{PaymentAmount}}
+\index{PaymentAmount@{PaymentAmount}!Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}}
+\doxysubsubsection{\texorpdfstring{PaymentAmount}{PaymentAmount}}
+{\footnotesize\ttfamily double Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Shopping\+Cart.\+Payment\+Amount}
+
+\mbox{\Hypertarget{class_online___book___store__v2_1_1_shopping_cart_a8edf88d7f260713e22f4f16279cba82e}\label{class_online___book___store__v2_1_1_shopping_cart_a8edf88d7f260713e22f4f16279cba82e}} 
+\index{Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}!PaymentType@{PaymentType}}
+\index{PaymentType@{PaymentType}!Online\_Book\_Store\_v2.ShoppingCart@{Online\_Book\_Store\_v2.ShoppingCart}}
+\doxysubsubsection{\texorpdfstring{PaymentType}{PaymentType}}
+{\footnotesize\ttfamily int Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2.\+Shopping\+Cart.\+Payment\+Type}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Users/kenan/\+One\+Drive/\+Masaüstü/oop2rep/oop-\/2/\+Online\+\_\+\+Book\+\_\+\+Store\+\_\+v2/\mbox{\hyperlink{_shopping_cart_8cs}{Shopping\+Cart.\+cs}}\end{DoxyCompactItemize}

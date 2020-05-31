@@ -1,0 +1,7 @@
+<map id="Online_Book_Store_v2.MusicCDPanel" name="Online_Book_Store_v2.MusicCDPanel">
+<area shape="rect" id="node1" title="Panel that shows the products" alt="" coords="66,404,258,540"/>
+<area shape="rect" id="node2" href="$class_online___book___store__v2_1_1_product_panel.html" title="Base panel" alt="" coords="5,220,105,341"/>
+<area shape="rect" id="node3" title=" " alt="" coords="28,49,83,127"/>
+<area shape="rect" id="node4" href="$class_online___book___store__v2_1_1_music_c_d.html" title="MusicCD Class" alt="" coords="130,227,341,334"/>
+<area shape="rect" id="node5" href="$class_online___book___store__v2_1_1_product.html" title="Base class that contains all products properties" alt="" coords="172,5,299,171"/>
+</map>

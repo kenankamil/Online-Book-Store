@@ -1,0 +1,10 @@
+digraph "Online_Book_Store_v2.MusicCDDetailsForm.Dispose"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Online_Book_Store_v2.Music\lCDDetailsForm.Dispose",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Clean up any resources being used."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Online_Book_Store_v2.Music\lCD.printProperties",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_online___book___store__v2_1_1_music_c_d.html#aa3a591d980e6ff2c6d9da01738ff3f56",tooltip="Shows the properties of MusicCD Class"];
+}
