@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net.Mail;
+using System.Net;
+using System.Drawing.Imaging;
 
 namespace Online_Book_Store_v2
 {
@@ -114,6 +117,8 @@ namespace Online_Book_Store_v2
             else
             {
                 MainForm.shoppingCart.PlaceOrder(txtAddress.Text, txtEmail.Text);
+                MainForm.shoppingCart.sendInvoidcebyEmail();
+                MainForm.shoppingCart.sendInvoicebySMS();
             }
         }
         /// <summary>

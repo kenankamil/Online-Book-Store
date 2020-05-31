@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Online_Book_Store_v2
 {
@@ -41,6 +43,15 @@ namespace Online_Book_Store_v2
             lblFiyatS.Text = MainForm.shoppingCart.PaymentAmount.ToString() + " TL";
         }
 
+        private void btnPDF_Click(object sender, EventArgs e)
+        {
+            Bitmap bitmap = new Bitmap(this.Width, this.Height);
+            DrawToBitmap(bitmap, new Rectangle(0, 0, bitmap.Width, bitmap.Height));
+            bitmap.Save(@"OrderInformation.jpeg", ImageFormat.Jpeg);
+            MainForm.shoppingCart.getPDF();
+            File.Delete(@"OrderInformation.jpeg");
+            this.Close();
 
+        }
     }
 }

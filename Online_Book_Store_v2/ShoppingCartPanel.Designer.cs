@@ -101,7 +101,7 @@
             this.tbShoppingList.Controls.Add(this.btnProceedCheckout);
             this.tbShoppingList.Controls.Add(this.btnCancelOrder);
             this.tbShoppingList.Controls.Add(this.flpnlProduct);
-            this.tbShoppingList.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tbShoppingList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tbShoppingList.Location = new System.Drawing.Point(4, 25);
             this.tbShoppingList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbShoppingList.Name = "tbShoppingList";
@@ -158,10 +158,10 @@
             // lblSubTotal
             // 
             this.lblSubTotal.AutoSize = true;
-            this.lblSubTotal.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSubTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblSubTotal.Location = new System.Drawing.Point(791, 49);
             this.lblSubTotal.Name = "lblSubTotal";
-            this.lblSubTotal.Size = new System.Drawing.Size(78, 19);
+            this.lblSubTotal.Size = new System.Drawing.Size(84, 20);
             this.lblSubTotal.TabIndex = 10;
             this.lblSubTotal.Text = "Subtotal:";
             // 
@@ -226,7 +226,7 @@
             this.tbOrderInformation.Controls.Add(this.lbName);
             this.tbOrderInformation.Controls.Add(this.btnPrev);
             this.tbOrderInformation.Controls.Add(this.btnOrder);
-            this.tbOrderInformation.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tbOrderInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tbOrderInformation.Location = new System.Drawing.Point(4, 25);
             this.tbOrderInformation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbOrderInformation.Name = "tbOrderInformation";
@@ -239,12 +239,12 @@
             // lblHata
             // 
             this.lblHata.AutoSize = true;
-            this.lblHata.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblHata.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblHata.ForeColor = System.Drawing.Color.Red;
             this.lblHata.Location = new System.Drawing.Point(327, 251);
             this.lblHata.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHata.Name = "lblHata";
-            this.lblHata.Size = new System.Drawing.Size(0, 23);
+            this.lblHata.Size = new System.Drawing.Size(0, 25);
             this.lblHata.TabIndex = 33;
             // 
             // grpCreditCard
@@ -261,25 +261,25 @@
             this.grpCreditCard.Margin = new System.Windows.Forms.Padding(4);
             this.grpCreditCard.Name = "grpCreditCard";
             this.grpCreditCard.Padding = new System.Windows.Forms.Padding(4);
-            this.grpCreditCard.Size = new System.Drawing.Size(419, 134);
+            this.grpCreditCard.Size = new System.Drawing.Size(431, 134);
             this.grpCreditCard.TabIndex = 32;
             this.grpCreditCard.TabStop = false;
             // 
             // txtCardOwner
             // 
-            this.txtCardOwner.Location = new System.Drawing.Point(121, 27);
+            this.txtCardOwner.Location = new System.Drawing.Point(144, 29);
             this.txtCardOwner.Margin = new System.Windows.Forms.Padding(4);
             this.txtCardOwner.Name = "txtCardOwner";
-            this.txtCardOwner.Size = new System.Drawing.Size(279, 26);
+            this.txtCardOwner.Size = new System.Drawing.Size(279, 24);
             this.txtCardOwner.TabIndex = 15;
             // 
             // mtCVC
             // 
-            this.mtCVC.Location = new System.Drawing.Point(363, 89);
+            this.mtCVC.Location = new System.Drawing.Point(367, 89);
             this.mtCVC.Margin = new System.Windows.Forms.Padding(4);
             this.mtCVC.Mask = "000";
             this.mtCVC.Name = "mtCVC";
-            this.mtCVC.Size = new System.Drawing.Size(36, 26);
+            this.mtCVC.Size = new System.Drawing.Size(36, 24);
             this.mtCVC.TabIndex = 19;
             // 
             // lblCardOwner
@@ -298,7 +298,7 @@
             this.lblCVC.Location = new System.Drawing.Point(317, 91);
             this.lblCVC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCVC.Name = "lblCVC";
-            this.lblCVC.Size = new System.Drawing.Size(43, 18);
+            this.lblCVC.Size = new System.Drawing.Size(42, 18);
             this.lblCVC.TabIndex = 18;
             this.lblCVC.Text = "CVC";
             // 
@@ -316,12 +316,12 @@
             // 
             this.dtpExpDate.CustomFormat = "MM/yy";
             this.dtpExpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpExpDate.Location = new System.Drawing.Point(121, 89);
+            this.dtpExpDate.Location = new System.Drawing.Point(144, 89);
             this.dtpExpDate.Margin = new System.Windows.Forms.Padding(4);
             this.dtpExpDate.MaxDate = new System.DateTime(2030, 12, 31, 0, 0, 0, 0);
             this.dtpExpDate.MinDate = new System.DateTime(2019, 12, 25, 23, 59, 59, 0);
             this.dtpExpDate.Name = "dtpExpDate";
-            this.dtpExpDate.Size = new System.Drawing.Size(88, 26);
+            this.dtpExpDate.Size = new System.Drawing.Size(88, 24);
             this.dtpExpDate.TabIndex = 17;
             this.dtpExpDate.Value = new System.DateTime(2019, 12, 25, 23, 59, 59, 0);
             // 
@@ -331,17 +331,17 @@
             this.lbExpDate.Location = new System.Drawing.Point(1, 91);
             this.lbExpDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbExpDate.Name = "lbExpDate";
-            this.lbExpDate.Size = new System.Drawing.Size(119, 18);
+            this.lbExpDate.Size = new System.Drawing.Size(123, 18);
             this.lbExpDate.TabIndex = 14;
             this.lbExpDate.Text = "Expiration Date";
             // 
             // mtCardNumber
             // 
-            this.mtCardNumber.Location = new System.Drawing.Point(121, 54);
+            this.mtCardNumber.Location = new System.Drawing.Point(144, 56);
             this.mtCardNumber.Margin = new System.Windows.Forms.Padding(4);
             this.mtCardNumber.Mask = "0000-0000-0000-0000";
             this.mtCardNumber.Name = "mtCardNumber";
-            this.mtCardNumber.Size = new System.Drawing.Size(279, 26);
+            this.mtCardNumber.Size = new System.Drawing.Size(279, 24);
             this.mtCardNumber.TabIndex = 16;
             // 
             // lblInfo
@@ -350,17 +350,17 @@
             this.lblInfo.Location = new System.Drawing.Point(77, 214);
             this.lblInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(237, 18);
+            this.lblInfo.Size = new System.Drawing.Size(239, 18);
             this.lblInfo.TabIndex = 31;
             this.lblInfo.Text = "Choose your payment method.";
             // 
             // rbCash
             // 
             this.rbCash.AutoSize = true;
-            this.rbCash.Location = new System.Drawing.Point(207, 233);
+            this.rbCash.Location = new System.Drawing.Point(222, 233);
             this.rbCash.Margin = new System.Windows.Forms.Padding(4);
             this.rbCash.Name = "rbCash";
-            this.rbCash.Size = new System.Drawing.Size(66, 22);
+            this.rbCash.Size = new System.Drawing.Size(68, 22);
             this.rbCash.TabIndex = 30;
             this.rbCash.TabStop = true;
             this.rbCash.Text = "Cash";
@@ -386,7 +386,7 @@
             this.lblCustName.Location = new System.Drawing.Point(77, 5);
             this.lblCustName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCustName.Name = "lblCustName";
-            this.lblCustName.Size = new System.Drawing.Size(53, 18);
+            this.lblCustName.Size = new System.Drawing.Size(52, 18);
             this.lblCustName.TabIndex = 26;
             this.lblCustName.Text = "Name";
             // 
@@ -404,7 +404,7 @@
             this.txtEmail.Location = new System.Drawing.Point(81, 26);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(197, 26);
+            this.txtEmail.Size = new System.Drawing.Size(197, 24);
             this.txtEmail.TabIndex = 24;
             // 
             // lbAddress
@@ -413,7 +413,7 @@
             this.lbAddress.Location = new System.Drawing.Point(5, 54);
             this.lbAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbAddress.Name = "lbAddress";
-            this.lbAddress.Size = new System.Drawing.Size(66, 18);
+            this.lbAddress.Size = new System.Drawing.Size(69, 18);
             this.lbAddress.TabIndex = 23;
             this.lbAddress.Text = "Address";
             // 
@@ -423,7 +423,7 @@
             this.lbEmail.Location = new System.Drawing.Point(23, 30);
             this.lbEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(48, 18);
+            this.lbEmail.Size = new System.Drawing.Size(50, 18);
             this.lbEmail.TabIndex = 22;
             this.lbEmail.Text = "Email";
             // 
@@ -433,7 +433,7 @@
             this.lbName.Location = new System.Drawing.Point(19, 5);
             this.lbName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(53, 18);
+            this.lbName.Size = new System.Drawing.Size(52, 18);
             this.lbName.TabIndex = 21;
             this.lbName.Text = "Name";
             // 
@@ -441,10 +441,10 @@
             // 
             this.btnPrev.BackColor = System.Drawing.Color.Snow;
             this.btnPrev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrev.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnPrev.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnPrev.Image = global::Online_Book_Store_v2.Properties.Resources.back_arrow;
             this.btnPrev.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPrev.Location = new System.Drawing.Point(7, 279);
+            this.btnPrev.Location = new System.Drawing.Point(80, 279);
             this.btnPrev.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrev.Name = "btnPrev";
             this.btnPrev.Size = new System.Drawing.Size(197, 47);
@@ -457,15 +457,15 @@
             // 
             this.btnOrder.BackColor = System.Drawing.Color.Snow;
             this.btnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOrder.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnOrder.Image = global::Online_Book_Store_v2.Properties.Resources.icons8_paycheque_48;
             this.btnOrder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrder.Location = new System.Drawing.Point(541, 279);
+            this.btnOrder.Location = new System.Drawing.Point(502, 279);
             this.btnOrder.Margin = new System.Windows.Forms.Padding(4);
             this.btnOrder.Name = "btnOrder";
-            this.btnOrder.Size = new System.Drawing.Size(197, 47);
+            this.btnOrder.Size = new System.Drawing.Size(236, 47);
             this.btnOrder.TabIndex = 27;
-            this.btnOrder.Text = "Place Order";
+            this.btnOrder.Text = "   Place Order";
             this.btnOrder.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnOrder.UseVisualStyleBackColor = false;
             this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click_1);
