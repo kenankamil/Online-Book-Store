@@ -11,11 +11,11 @@ using System.Windows.Forms;
 namespace Online_Book_Store_v2
 {
     /// <summary>
-    /// Fatura sınıfının olusturulmasi, ve faturanin yaratilmasi
+    /// Fatura Class 
     /// </summary>
     public partial class Fatura : Form
     {
-        public Fatura(string teslimatAdresi, string email) ///fatura olusturulur, formda gosterimi yapilir
+        public Fatura(string teslimatAdresi, string email) ///Shows the invoice 
         {
             InitializeComponent();
             lblŞirket.Text = "Online Book Store" + Environment.NewLine + "Eskişehir - OGU" + Environment.NewLine + "Tel: 0222 222 22 22";

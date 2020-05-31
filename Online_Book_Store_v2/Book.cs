@@ -8,7 +8,7 @@ namespace Online_Book_Store_v2
 {
 
     /// <summary>
-    /// kitap class'i ve genel uye verileri
+    /// Book class's attributes and methods
     /// </summary>
     public class Book:Product
     {
@@ -19,7 +19,7 @@ namespace Online_Book_Store_v2
         public string summary;
         
 
-        public override void printProperties()   ///book class ozellik gosterimleri
+        public override void printProperties()  
         {
             BookDetailsForm bookForm = new BookDetailsForm(this);
             bookForm.ShowDialog();

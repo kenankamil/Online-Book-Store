@@ -10,13 +10,13 @@ using System.Windows.Forms;
 namespace Online_Book_Store_v2
 {
     /// <summary>
-    /// veri tabani baglantisini yapmak icin kullanilan class.
+    /// Database class's attributes and methods
     /// </summary>
     class DataBase
     {
         static private DataBase db;
         private DataBase() { }
-        ///nesne tanimlanmamis ise private yapilandiriciyi cagirarak nesneyi olusturur ve onu doner.
+        ///If object equals null, means no object, then creates an object and returns it.
         public static DataBase getInstance()
         {
             if (db == null)
@@ -74,7 +74,7 @@ namespace Online_Book_Store_v2
             db.sqlConnection.Close();
             return customer;
         }
-        public List<Product> BookLoader() ///kitaplarin listesi, yuklemesi gerceklenir.
+        public List<Product> BookLoader() ///Loads to books
         {
             List<Product> booklist = new List<Product>();
             db.sqlConnection.Open();
@@ -115,7 +115,7 @@ namespace Online_Book_Store_v2
             db.sqlConnection.Close();
             return booklist;
         }
-        public List<Product> MusicCDLoader() ///albumlerin listesi, yuklemesi yapilir
+        public List<Product> MusicCDLoader() ///Loads to Musics
         {
             List<Product> musicList = new List<Product>();
             db.sqlConnection.Open();
@@ -152,7 +152,7 @@ namespace Online_Book_Store_v2
             db.sqlConnection.Close();
             return musicList;
         }
-        public List<Product> MagazineLoader() ///dergilerin listesi, yuklemesi yapilir
+        public List<Product> MagazineLoader() ///Loads to Magazines
         {
             List<Product> magazineList = new List<Product>();
             db.sqlConnection.Open();
@@ -189,7 +189,7 @@ namespace Online_Book_Store_v2
             db.sqlConnection.Close();
             return magazineList;
         }
-        public void DbUpdate(string[] values, string command) ///database update gerceklesir.
+        public void DbUpdate(string[] values, string command) ///Updates the Database
         {
             sqlConnection.Open();
             SqlCommand sqlcommand = new SqlCommand(command, sqlConnection);

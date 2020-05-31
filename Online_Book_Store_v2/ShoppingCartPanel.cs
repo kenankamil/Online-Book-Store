@@ -125,7 +125,7 @@ namespace Online_Book_Store_v2
         {
             Logger.logger("Shopping Cart Checkout");
             tbcntrlShowItem.SelectedIndex = 1;
-
+            
         }
         /// <summary>
         /// siparişi iptal eden method.

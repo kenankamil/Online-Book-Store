@@ -15,14 +15,14 @@ namespace Online_Book_Store_v2
     public partial class Login : Form
     {
         /// <summary>
-        /// uye girisinin yapildigi formdur. kullanici mail-sifre araciligiyla programa giris yapar.
+        /// Customer or Admin can login with mail-password combination
         /// </summary>
         public Login()
         {
             InitializeComponent();
         }
 
-        public static bool CheckForInternetConnection() ///internet baglantisi kontrol edilir.
+        public static bool CheckForInternetConnection() ///Checks to Internet Connection
         {
             try
             {
@@ -39,7 +39,7 @@ namespace Online_Book_Store_v2
                 return false;
             }
         }
-        private void btnGiriş_Click(object sender, EventArgs e) ///giris butonuna tiklandiginda gerekli kontroller yapilir
+        private void btnGiriş_Click(object sender, EventArgs e) ///This function checks the mail and password combination to give the access to user
         {
             DataBase dh = DataBase.getInstance();
             Customer logined = Customer.getInstance();
@@ -61,7 +61,7 @@ namespace Online_Book_Store_v2
         }
 
         
-        private void Login_Shown(object sender, EventArgs e)///internet baglantisini kontrol eden metod calistirilir, sorun varsa hata verilir.
+        private void Login_Shown(object sender, EventArgs e)
         {
             if (!CheckForInternetConnection())
             {
@@ -80,35 +80,35 @@ namespace Online_Book_Store_v2
             return base.ProcessCmdKey(ref msg, keyData);
         }
 
-        private void pbŞifreGöster_MouseDown_1(object sender, MouseEventArgs e)///sifre kontrol
+        private void pbŞifreGöster_MouseDown_1(object sender, MouseEventArgs e)///MouseDown event to check password
         {
             txtBoxŞifre.PasswordChar = '\0';
         }
 
-        private void pbŞifreGöster_MouseUp_1(object sender, MouseEventArgs e)///sifre kontrol icin mouseup event
+        private void pbŞifreGöster_MouseUp_1(object sender, MouseEventArgs e)///MouseUp event to check password
         {
             txtBoxŞifre.PasswordChar = '*';
         }
 
-        private void btnÜyeol_Click(object sender, EventArgs e) ///uye ol butonu ile uyelik olusturma formuna yonlendirme
+        private void btnÜyeol_Click(object sender, EventArgs e) ///This loads SignUp form
         {
             signUp form = new signUp();
             this.Hide();
             form.Show();
         }
 
-        private void btn_close_Click(object sender, EventArgs e)///close event
+        private void btn_close_Click(object sender, EventArgs e)///Application exit function
         {
             Application.Exit();
         }
-        private void btn_minimize_Click(object sender, EventArgs e)///minimize etme butonu
+        private void btn_minimize_Click(object sender, EventArgs e)///Changes the state of window
         {
             this.WindowState = FormWindowState.Minimized;
         }
         public const int WM_NCLBUTTONDOWN = 0xA1; public const int HT_CAPTION = 0x2;[DllImportAttribute("user32.dll")]  
-        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);[DllImportAttribute("user32.dll")] ///panelin hareketini saglamak icin kullanildi
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);[DllImportAttribute("user32.dll")] ///To move the Form
         public static extern bool ReleaseCapture();
-        private void pnlÜst_MouseMove(object sender, MouseEventArgs e) ///formun panel yardimiyla hareketi saglandi
+        private void pnlÜst_MouseMove(object sender, MouseEventArgs e) ///Upper panel mouseMove event
         {
             Drag_Form(Handle, e);
         }

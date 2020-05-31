@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Online_Book_Store_v2
 {
-   public class Magazine : Product ///dergi class i olusturuldu, product ile inherit edilmiş halde.
+    ///Magazine Class get created
+    public class Magazine : Product
     {
         public String issue;
         public string description;
