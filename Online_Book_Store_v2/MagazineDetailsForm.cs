@@ -14,11 +14,11 @@ namespace Online_Book_Store_v2
     {
 
         /// <summary>
-        /// secilen derginin detaylarini gosteren formdur
+        /// This class shows the details of chosen magazine product
         /// </summary>
 
         Magazine magazine;
-        public MagazineDetailsForm(Magazine magazine) ///secilen dergiye ozel bilgiler yerlestirilir, kullaniciya sunulur.
+        public MagazineDetailsForm(Magazine magazine) ///Shows the detailed information about chosen magazine
         {
             InitializeComponent();
 
@@ -43,16 +43,16 @@ namespace Online_Book_Store_v2
 
            
         }
-        public const int WM_NCLBUTTONDOWN = 0xA1; public const int HT_CAPTION = 0x2;[DllImportAttribute("user32.dll")]  /// panelin hareketini saglamak için gerekli kod
+        public const int WM_NCLBUTTONDOWN = 0xA1; public const int HT_CAPTION = 0x2;[DllImportAttribute("user32.dll")]  /// To move the Form
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);[DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
-        private void pnltop_MouseMove(object sender, MouseEventArgs e) ///formun uzerine panel yerlestirilir, bu paneli hareket ettirerek formun hareketini saglamis oluruz.
+        private void pnltop_MouseMove(object sender, MouseEventArgs e)  ///Upper panel mouseMove event to move the form
         {
             Drag_Form(Handle, e);
         }
         public static void Drag_Form(IntPtr Handle, MouseEventArgs e) { if (e.Button == MouseButtons.Left) { ReleaseCapture(); SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0); } } ///drag form
 
-        private void btnBack_Click(object sender, EventArgs e) ///detayli urun gosterimini kapatir.
+        private void btnBack_Click(object sender, EventArgs e) ///Closes the magazinedetail form
         {
             this.Close();
         }

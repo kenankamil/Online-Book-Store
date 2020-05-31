@@ -14,7 +14,7 @@ using System.Drawing.Imaging;
 namespace Online_Book_Store_v2
 {
     /// <summary>
-    /// sepet penceresi.
+    /// Shopping Cart panel
     /// </summary>
     public partial class ShoppingCartPanel : UserControl
     {
@@ -24,7 +24,7 @@ namespace Online_Book_Store_v2
         private static ShoppingCartPanel shopping;
 
         /// <summary>
-        /// panelin içerdiği componentlerin oluşturulduğu constructor.
+        /// Constructor
         /// </summary>
         /// <param name="list"></param>
         private ShoppingCartPanel(List<ShoppingCardItemPanel> list)
@@ -41,7 +41,7 @@ namespace Online_Book_Store_v2
             dtpExpDate.MaxDate = DateTime.Now.AddYears(5);
         }
         /// <summary>
-        /// classın singleton olmasını sağlayan method.
+        /// Singleton 
         /// </summary>
         /// <param name="_list"></param>
         /// <returns></returns>
@@ -56,7 +56,7 @@ namespace Online_Book_Store_v2
             return shopping;
         }
         /// <summary>
-        /// liste halindeki ürünlerin flowpanele eklendiği ve toplam fiyatın hesaplandığı method.
+        /// Function that adds products to panel
         /// </summary>
         public void fillPanel()
         {
@@ -77,7 +77,7 @@ namespace Online_Book_Store_v2
 
         }
         /// <summary>
-        /// e mailin geçerli olup olmadığını kontrol eden fonksiyon.
+        /// Checks the email
         /// </summary>
         /// <param name="email"></param>
         /// <returns></returns>
@@ -94,7 +94,7 @@ namespace Online_Book_Store_v2
             }
         }
         /// <summary>
-        /// süpariş vermeye yarayan method.
+        /// Order function
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -122,7 +122,7 @@ namespace Online_Book_Store_v2
             }
         }
         /// <summary>
-        /// ödeme sayfasına yönlendiren method.
+        /// Function that opens payment panel
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -133,7 +133,7 @@ namespace Online_Book_Store_v2
 
         }
         /// <summary>
-        /// siparişi iptal eden method.
+        /// Cancel order
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -144,7 +144,7 @@ namespace Online_Book_Store_v2
                 MainForm.shoppingCart.CancelOrder();
         }
         /// <summary>
-        /// alışverişe geri dönmeyi sağlayan method.
+        /// Return back function
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -153,7 +153,7 @@ namespace Online_Book_Store_v2
             this.Visible = false;
         }
         /// <summary>
-        /// ürünlerin gösterildği sayfaya dönmeyi sağlayan method.
+        /// Previous Function
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -163,7 +163,7 @@ namespace Online_Book_Store_v2
             tbcntrlShowItem.SelectedIndex = 0;
         }
         /// <summary>
-        /// nakit mi yoksa kredi kartımı olacağını değiştiren method.
+        /// Function that checks the payment method that (cash or credit card)
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -177,7 +177,7 @@ namespace Online_Book_Store_v2
             btnOrder.Image = Properties.Resources.icons8_paycheque_48;
         }
         /// <summary>
-        /// nakit mi yoksa kredi kartımı olacağını değiştiren method.
+        /// Changes the payment method
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

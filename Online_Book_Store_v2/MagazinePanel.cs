@@ -9,7 +9,8 @@ using System.Windows.Forms;
 
 namespace Online_Book_Store_v2
 {
-    class MagazinePanel : ProductPanel  ///magazine gosterimi icin ozel panel, productpanel ile inheritance iliskisi vardir.
+    ///Magazine panel to shows detailed information
+    class MagazinePanel : ProductPanel  
     {
         public Label Issue;
         public Label Type;
@@ -17,7 +18,8 @@ namespace Online_Book_Store_v2
         public Label Price2;
         public Magazine magazine;
 
-        public MagazinePanel(Magazine item) ///sergilenen tum dergileri belirli bir standartta sergilemek icin olusturulan paneldir
+        ///With this class all magazine products sorts according to a certain order
+        public MagazinePanel(Magazine item) 
         {
             magazine = item;
             this.BackColor = Color.Transparent;
@@ -102,13 +104,13 @@ namespace Online_Book_Store_v2
             this.Controls[7].Location = new Point(225, 140); /// Add to cart image
         }
 
-        void magnifierClick(object sender, EventArgs e) ///buyutec tiklaninca istenen derginin ayrintili bilgileri kullaniciya sunulur
+        void magnifierClick(object sender, EventArgs e) ///When magnifying glass png get clicked, detailed informations shows up
         {
             Logger.logger(magazine.name + " Panel Magnifier");
             magazine.printProperties();
         }
 
-        void addCart(object sender, EventArgs e) ///bir dergi sepete eklenince gerceklesen eylemleri iceren method
+        void addCart(object sender, EventArgs e) ///When magazine product gets added to shopping cart this function runs
         {
 
             Logger.logger(magazine.name + " Panel Add Cart");

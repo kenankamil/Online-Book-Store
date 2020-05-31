@@ -12,11 +12,11 @@ namespace Online_Book_Store_v2
 {
     public partial class MusicCDDetailsForm : Form
     {/// <summary>
-     /// muzik verilerinin detaylı gösterildiği form.
+     /// This Form shows the products related the musicCD Class
      /// </summary>
         MusicCD musicCD;
         /// <summary>
-        /// classın constructor methodu. 
+        /// Constructer method of this Form
         /// </summary>
         /// <param name="musicCD"></param> verilerin tutulduğu class
         public MusicCDDetailsForm(MusicCD musicCD)
@@ -44,7 +44,7 @@ namespace Online_Book_Store_v2
             pcbPicture.BackgroundImageLayout = ImageLayout.Zoom;
         }
         /// <summary>
-        /// formu kapatmaya yarayan buton.
+        /// Button that closes the application
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -52,11 +52,11 @@ namespace Online_Book_Store_v2
         {
             this.Close();
         }
-        public const int WM_NCLBUTTONDOWN = 0xA1; public const int HT_CAPTION = 0x2;[DllImportAttribute("user32.dll")]  //paneli hareket ettirmek için
+        public const int WM_NCLBUTTONDOWN = 0xA1; public const int HT_CAPTION = 0x2;[DllImportAttribute("user32.dll")]  
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);[DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
         /// <summary>
-        /// formun hareket etmesini sağlayan method.
+        /// Function that moves the form
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -64,14 +64,10 @@ namespace Online_Book_Store_v2
         {
             Drag_Form(Handle, e);
         }
-        /// <summary>
-        /// formun hareket etmesini sağlayan method.
-        /// </summary>
-        /// <param name="Handle"></param>
-        /// <param name="e"></param>
+ 
         public static void Drag_Form(IntPtr Handle, MouseEventArgs e) { if (e.Button == MouseButtons.Left) { ReleaseCapture(); SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0); } }
         /// <summary>
-        /// ürünü sepete ekleyen method.
+        /// Function that adds product to shopping cart
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

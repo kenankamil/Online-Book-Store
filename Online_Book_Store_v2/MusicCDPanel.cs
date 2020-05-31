@@ -10,7 +10,7 @@ using System.Windows.Forms;
 namespace Online_Book_Store_v2
 {
     /// <summary>
-    /// müziklerin gösterildiği panel.
+    /// Panel that shows the products 
     /// </summary>
     class MusicCDPanel : ProductPanel
     {
@@ -21,7 +21,7 @@ namespace Online_Book_Store_v2
         public MusicCD musicCD;
 
         /// <summary>
-        /// panelin içerdiği componentlerin oluşturulduğu constructor.
+        /// Constructor method of this panel
         /// </summary>
         /// <param name="item"></param>
         public MusicCDPanel(MusicCD item)
@@ -109,7 +109,7 @@ namespace Online_Book_Store_v2
         }
 
         /// <summary>
-        /// ürülerin ayrıntısını açmaya yarayan method.
+        /// Shows detailed information of the selected product
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -122,7 +122,7 @@ namespace Online_Book_Store_v2
 
 
         /// <summary>
-        /// ürünleri sepete eklemeye yarayan method.
+        /// Function that adds products to shopping cart
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

@@ -15,7 +15,7 @@ using System.Data.SqlClient;
 namespace Online_Book_Store_v2
 {
     /// <summary>
-    /// üye kaydı yapılan form.
+    /// SignUp Form
     /// </summary>
     public partial class signUp : Form
     {
@@ -26,7 +26,7 @@ namespace Online_Book_Store_v2
         Login form = new Login();
 
         /// <summary>
-        /// üye olmaya yarayan method.
+        /// SignUp Function
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -81,7 +81,7 @@ namespace Online_Book_Store_v2
             }
         }
         /// <summary>
-        /// emailin geçerli olup olmadığını kontrol eden method.
+        /// Checks the email 
         /// </summary>
         /// <param name="email"></param>
         /// <returns></returns>
@@ -116,28 +116,19 @@ namespace Online_Book_Store_v2
                 e.Handled = true;
             }
         }
-        /// <summary>
-        /// şifrenin normal halde gösterilmesini sağlayan method.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+      
         private void pbŞifreGöster2_MouseDown(object sender, MouseEventArgs e)
         {
             txtboxŞifre.PasswordChar = '\0';
             txtBoxŞifreTekrar.PasswordChar = '\0';
         }
-        /// <summary>
-        /// şifrenin normal halde gösterilmesini sağlayan method.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void pbŞifreGöster2_MouseUp(object sender, MouseEventArgs e)
         {
             txtboxŞifre.PasswordChar = '*';
             txtBoxŞifreTekrar.PasswordChar = '*';
         }
         /// <summary>
-        /// formu kapatan method.
+        /// Close Application
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -146,7 +137,7 @@ namespace Online_Book_Store_v2
             Application.Exit();
         }
         /// <summary>
-        /// formu minimize eden method.
+        /// Function that changes the state of window
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -155,11 +146,11 @@ namespace Online_Book_Store_v2
             this.WindowState = FormWindowState.Minimized;
         }
 
-        public const int WM_NCLBUTTONDOWN = 0xA1; public const int HT_CAPTION = 0x2;[DllImportAttribute("user32.dll")]  //paneli hareket ettirmek için
+        public const int WM_NCLBUTTONDOWN = 0xA1; public const int HT_CAPTION = 0x2;[DllImportAttribute("user32.dll")]  
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);[DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
         /// <summary>
-        /// formu hareket ettirmeye yarayan method.
+        /// Function that moves to form
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -168,7 +159,7 @@ namespace Online_Book_Store_v2
             Drag_Form(Handle, e);
         }
         /// <summary>
-        /// formu hareket ettirmeye yarayan method.
+        /// Function that moves to form
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

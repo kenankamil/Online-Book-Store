@@ -7,7 +7,7 @@ using System.Windows.Forms;
 namespace Online_Book_Store_v2
 {
     /// <summary>
-    /// muzik kitap ve dergi panellerinin base paneli.
+    /// Base panel 
     /// </summary>
     class ProductPanel : Panel
     {

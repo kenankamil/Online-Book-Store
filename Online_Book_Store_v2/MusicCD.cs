@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Online_Book_Store_v2
 {
     /// <summary>
-    /// music cdnin verilerini tutan class.
+    /// MusicCD Class
     /// </summary>
     public class MusicCD : Product
     {
@@ -16,7 +16,7 @@ namespace Online_Book_Store_v2
         public string demo;
 
         /// <summary>
-        /// music classının verilerini detaylı olarak gösteren formun oluşturulduğu method.
+        /// Shows the properties of MusicCD Class
         /// </summary>
         public override void printProperties()
         {

@@ -7,7 +7,7 @@ using System.Drawing;
 namespace Online_Book_Store_v2
 {
     /// <summary>
-    /// ürünlerin bilgilerini tutan base class.
+    /// Base class that contains all products properties
     /// </summary>
     public abstract class Product
     {

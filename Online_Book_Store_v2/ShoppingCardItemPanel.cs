@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace Online_Book_Store_v2
 { /// <summary>
-/// shoppincard panelinde gösterilen ürünlerin paneli.
+/// Panel of selected items at shopping cart
 /// </summary>
     public class ShoppingCardItemPanel : Panel
     {
@@ -17,7 +17,7 @@ namespace Online_Book_Store_v2
         private PictureBox pbThumbnail;
         public ItemToPurchase item;
         /// <summary>
-        /// panelin içerdiği componentlerin oluşturulduğu constructor.
+        /// Constructor that contains the properties of panel
         /// </summary>
         /// <param name="item"></param>
         public ShoppingCardItemPanel(ItemToPurchase item)
@@ -127,7 +127,7 @@ namespace Online_Book_Store_v2
 
         }
         /// <summary>
-        /// alınmak istenin ürün sayısını değiştiren method.
+        /// Function that changes the quantity of products
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -139,7 +139,7 @@ namespace Online_Book_Store_v2
             MainForm.shoppingCart.refreshPanel();
         }
         /// <summary>
-        /// ürünü sepetten çıkartan button.
+        /// Delete function
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

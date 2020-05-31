@@ -12,8 +12,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Online_Book_Store_v2
-{   /// <summary>
-/// main form 
+{    /// <summary>
+/// Main Application Form 
 /// </summary>
     public partial class MainForm : Form
     {
@@ -50,7 +50,7 @@ namespace Online_Book_Store_v2
 
 
         /// <summary>
-        /// formun hareket etmesı için kullanılan kod.
+        /// This function created for move the Panel with MouseMove event
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -59,13 +59,13 @@ namespace Online_Book_Store_v2
             Drag_Form(Handle, e); //panel2 hareket etmesi için
         }
         /// <summary>
-        /// formun hareket etmesi için kullanılan kod.
+        /// Copyright function for move the panel  / Drag_Form
         /// </summary>
         /// <param name="Handle"></param>
         /// <param name="e"></param>
         public static void Drag_Form(IntPtr Handle, MouseEventArgs e) { if (e.Button == MouseButtons.Left) { ReleaseCapture(); SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0); } }
         /// <summary>
-        /// formun kapanmasını sağlayan buton.
+        /// Exit button code to close the app
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -74,7 +74,7 @@ namespace Online_Book_Store_v2
             Application.Exit();
         }
         /// <summary>
-        /// formu minimize eden buton.
+        /// This Function changes the state of the window
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -83,7 +83,7 @@ namespace Online_Book_Store_v2
             this.WindowState = FormWindowState.Minimized;
         }
         /// <summary>
-        /// book sayfasını gösteren buton.
+        /// This function shows the Book Form
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -114,7 +114,7 @@ namespace Online_Book_Store_v2
 
         }
         /// <summary>
-        /// magazine sayfasını gösteren button.
+        /// This func shows the Magazine Form when you clicked the related button
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -144,7 +144,7 @@ namespace Online_Book_Store_v2
 
         }
         /// <summary>
-        /// shoppin card sayfasını gösteren buton.
+        /// This function shows the Shopping Cart Form when you clicked the related button
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -161,7 +161,7 @@ namespace Online_Book_Store_v2
 
         }
         /// <summary>
-        /// muzik sayfasını gösteren buton.
+        /// This function shows the Music Form when you clicked the related button
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -191,7 +191,7 @@ namespace Online_Book_Store_v2
         }
 
         /// <summary>
-        /// formun yüklenirken çalışan kodlar.
+        /// This function contains codes that must run before the Main Form get loaded
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -210,7 +210,7 @@ namespace Online_Book_Store_v2
             btnBook.PerformClick();
         }
         /// <summary>
-        /// kategorilere göre göstermeyi yarayan method.
+        /// With this function, you can categorize the products
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -243,7 +243,7 @@ namespace Online_Book_Store_v2
 
         }
         /// <summary>
-        /// admin sayfasını açan buton
+        /// This function shows the Administration Form that you can add, delete or update products and customers. 
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -272,7 +272,7 @@ namespace Online_Book_Store_v2
         }
 
         /// <summary>
-        /// shopping cardta kaç tane ürün olduğunu gösteren timer.
+        /// This timer shows the count of the products
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -289,7 +289,7 @@ namespace Online_Book_Store_v2
             }
         }
         /// <summary>
-        /// bütün ürünleri gösteren sayfa.
+        /// This shows all products that added
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -316,7 +316,7 @@ namespace Online_Book_Store_v2
             }
         }
         /// <summary>
-        /// ürünleri sıralamaya yarayan method.
+        /// With this function you can sort your products via name or price
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -351,7 +351,7 @@ namespace Online_Book_Store_v2
             }
         }
         /// <summary>
-        /// kullanıcının profil bilgilerini açan button.
+        /// This function shows the details of customers profile
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

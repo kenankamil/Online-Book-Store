@@ -14,7 +14,7 @@ namespace Online_Book_Store_v2
     {
 
         /// <summary>
-        /// kullanici kendi bilgilerini guncellemek isteyebilir, onu bu form uzerinden yapar.
+        /// Customer can update his/her own personal informations.
         /// </summary>
 
         public KullanıcıGüncelleme()
