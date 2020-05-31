@@ -61,5 +61,10 @@ namespace Online_Book_Store_v2
         {
 
         }
+
+        private void lblTop_MouseMove(object sender, MouseEventArgs e)
+        {
+            Drag_Form(Handle, e);        
+        }
     }
 }
