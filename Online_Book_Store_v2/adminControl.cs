@@ -14,7 +14,8 @@ namespace Online_Book_Store_v2
 {
 
     /// <summary>
-    /// admin panelinin genel yapısını oluşturur. datagridviewler ile ürün/kullanıcı yönetimi sağlanır.
+    /// Ths creates the general structure of the admin panel.
+    /// Uses the datagridviews to user/product management
     /// </summary>
 
     public partial class adminControl : Form
@@ -32,7 +33,7 @@ namespace Online_Book_Store_v2
 
 
         string ImageDest;
-        public void refreshPanel()  ///refreshing panels for new coming datas.
+        public void refreshPanel()  ///Refreshing panels for new coming datas.
         {
             dataset.Clear();
             dh = DataBase.getInstance();
@@ -40,7 +41,7 @@ namespace Online_Book_Store_v2
             adapter = new SqlDataAdapter(cmd);
             adapter.Fill(dataset);
         }
-        public adminControl()   ///baslangic icin yapilan atamalar
+        public adminControl()   ///This codes runes when the form get loaded
         {
             InitializeComponent();
             dh = DataBase.getInstance();
@@ -88,7 +89,7 @@ namespace Online_Book_Store_v2
             }
         }
 
-        bool IsValidEmail(string email) ///e-mail in gecerliligini kontrol eder.
+        bool IsValidEmail(string email) ///Checks the email
         {
             try
             {
@@ -101,7 +102,7 @@ namespace Online_Book_Store_v2
             }
         }
 
-        private bool checkWhiteSpace(TextBox[] array)   ///whitespace kontrol metodu
+        private bool checkWhiteSpace(TextBox[] array)   ///Checks the whitespaces in array
         {
             foreach (var item in array)
             {
@@ -111,7 +112,7 @@ namespace Online_Book_Store_v2
             return true;
         }
 
-        private void DigitControl(object sender, KeyPressEventArgs e)   ///keypress eventi icin digit control, designer included
+        private void DigitControl(object sender, KeyPressEventArgs e)   ///Controls the digits to keypress event, designer included
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
         (e.KeyChar != '.'))
@@ -148,7 +149,7 @@ namespace Online_Book_Store_v2
             }
         }
 
-        private void btn_customerDelete_Click(object sender, EventArgs e)   ///musteri silme islemini gercekleyen buton
+        private void btn_customerDelete_Click(object sender, EventArgs e)   ///Deletes the customer
         {
             string table = "";
             string Id;
@@ -216,7 +217,7 @@ namespace Online_Book_Store_v2
 
         }
 
-        private void btn_addBook_Click(object sender, EventArgs e)///kitap ekleme islemini gercekleyen buton
+        private void btn_addBook_Click(object sender, EventArgs e)///Adds book
         {
             if (!checkWhiteSpace(bookTextArray))
             {
@@ -240,7 +241,7 @@ namespace Online_Book_Store_v2
             refreshPanel();
         }
 
-        private void btn_addMagazine_Click(object sender, EventArgs e) ///dergi ekleme islemini gercekleyen buton
+        private void btn_addMagazine_Click(object sender, EventArgs e) ///Adds Magazine
         {
             if (!checkWhiteSpace(magazineTextArray))
             {
@@ -264,7 +265,7 @@ namespace Online_Book_Store_v2
             refreshPanel();
         }
 
-        private void btn_addMusic_Click(object sender, EventArgs e) ///muzikCd urunu eklemeyi saglayan buton
+        private void btn_addMusic_Click(object sender, EventArgs e) ///Adds MusicCD
         {
             if (!checkWhiteSpace(musicCDTextArray))
             {
@@ -290,7 +291,7 @@ namespace Online_Book_Store_v2
             refreshPanel();
         }
 
-        private void cbIsRoot_CheckedChanged_1(object sender, EventArgs e)///adminlik kontrolu yapan checkbox kontrol evennti
+        private void cbIsRoot_CheckedChanged_1(object sender, EventArgs e)///Checks the state of customer if he/she is admin or not
         {
             Customer cstmr = Customer.getInstance();
 
@@ -308,7 +309,7 @@ namespace Online_Book_Store_v2
             }
         }
 
-        private void tb_bookPage_KeyPress(object sender, KeyPressEventArgs e)///bookpage textbox icin keypress kontrol
+        private void tb_bookPage_KeyPress(object sender, KeyPressEventArgs e)///keypress control
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
             {
@@ -316,7 +317,7 @@ namespace Online_Book_Store_v2
             }
         }
 
-        private void tb_magazineIssue_KeyPress(object sender, KeyPressEventArgs e)///dergi sayisi icin keypress eventi
+        private void tb_magazineIssue_KeyPress(object sender, KeyPressEventArgs e)///keypress event for magazine count
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
             {
@@ -324,7 +325,7 @@ namespace Online_Book_Store_v2
             }
         }
 
-        private void btn_customer_update_Click(object sender, EventArgs e) ///musteri update butonunun click eventi
+        private void btn_customer_update_Click(object sender, EventArgs e) ///Click event for customer update
         {
             if (!checkWhiteSpace(customerTextArray) || !IsValidEmail(tb_customerMail.Text))
             {
@@ -353,7 +354,7 @@ namespace Online_Book_Store_v2
             refreshPanel();
         }
 
-        private void btn_updateBook_Click(object sender, EventArgs e) ///kitap update butonu click eventi
+        private void btn_updateBook_Click(object sender, EventArgs e) ///Click event for book update
         {
             if (!checkWhiteSpace(bookTextArray))
             {
@@ -368,7 +369,7 @@ namespace Online_Book_Store_v2
             refreshPanel();
         }
 
-        private void btn_updateMagazine_Click(object sender, EventArgs e) ///magazine update butonu click eventi
+        private void btn_updateMagazine_Click(object sender, EventArgs e) ///Click event for Magazine Update
         {
             if (!checkWhiteSpace(magazineTextArray))
             {
@@ -383,7 +384,7 @@ namespace Online_Book_Store_v2
             refreshPanel();
         }
 
-        private void btn_updateMusic_Click(object sender, EventArgs e)///music update butonu click eventi
+        private void btn_updateMusic_Click(object sender, EventArgs e)///Music Update
         {
             if (!checkWhiteSpace(musicCDTextArray))
             {
@@ -397,7 +398,7 @@ namespace Online_Book_Store_v2
             refreshPanel();
         }
 
-        private void tabControl_adminPanel_SelectedIndexChanged(object sender, EventArgs e) ///tabcontrol gecisleri degismesi durumunda yeni ekran olusumu
+        private void tabControl_adminPanel_SelectedIndexChanged(object sender, EventArgs e) 
         {
             DataGridViewCellEventArgs a = new DataGridViewCellEventArgs(0, 0);
 
@@ -423,7 +424,7 @@ namespace Online_Book_Store_v2
             }
         }
 
-        private void btn_addBookPicture_Click(object sender, EventArgs e) /// resim ekleme butonu 
+        private void btn_addBookPicture_Click(object sender, EventArgs e) /// Add picture button
         {
             openFileDialog1.Multiselect = false;
             openFileDialog1.Filter = "PNG Files (*.png) | *.png";
@@ -438,7 +439,7 @@ namespace Online_Book_Store_v2
             catch (Exception) { }
         }
 
-        private void btn_addMagazinePicture_Click(object sender, EventArgs e) ///dergi resmi ekleme butonu
+        private void btn_addMagazinePicture_Click(object sender, EventArgs e) ///Add pic to Magazine
         {
             openFileDialog1.Multiselect = false;
             openFileDialog1.Filter = "PNG Files (*.png) | *.png";
@@ -454,7 +455,7 @@ namespace Online_Book_Store_v2
             { }
 
         }
-        private void btn_addMusicPicture_Click(object sender, EventArgs e) ///muzik resmi ekleme butonu
+        private void btn_addMusicPicture_Click(object sender, EventArgs e) ///Add pic to Music
         {
             openFileDialog1.Multiselect = false;
             openFileDialog1.Filter = "PNG Files (*.png) | *.png";
@@ -470,7 +471,7 @@ namespace Online_Book_Store_v2
             { }
         }
 
-        private void dg_books_CellClick(object sender, DataGridViewCellEventArgs e) ///kitap datagridinde satir secimi
+        private void dg_books_CellClick(object sender, DataGridViewCellEventArgs e) ///Selecting row from datagridview
         {
             index = e.RowIndex;
             btn_addBook.Enabled = false;
@@ -535,7 +536,7 @@ namespace Online_Book_Store_v2
 
         }
 
-        private void dg_magazines_CellClick(object sender, DataGridViewCellEventArgs e)///dergi datagridinde belirli bir dergiyi secmek
+        private void dg_magazines_CellClick(object sender, DataGridViewCellEventArgs e)///Selecting spesific magazine from magazine datagrid
         {
             index = e.RowIndex;
             btn_addMagazine.Enabled = false;
@@ -586,7 +587,7 @@ namespace Online_Book_Store_v2
             }
         }
 
-        private void dg_musicCD_CellClick(object sender, DataGridViewCellEventArgs e)///belirli bir music cd secme islemi, secilen albumun txtboxlara yazimi
+        private void dg_musicCD_CellClick(object sender, DataGridViewCellEventArgs e)///Selecting spesific magazine from music datagrid
         {
             index = e.RowIndex;
             btn_addMusic.Enabled = false;

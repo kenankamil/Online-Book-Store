@@ -18,7 +18,7 @@ namespace Online_Book_Store_v2
         public Book book;
         
 
-        public BookPanel(Book item) ///her bir kitap icin sabit ve belirli bir panel ile gosterim yapilir.
+        public BookPanel(Book item) ///Each of every book shows in different squares
         {
             book = item;
             this.BackColor = Color.Transparent;

@@ -13,9 +13,9 @@ namespace Online_Book_Store_v2
     public partial class BookDetailsForm : Form
     {
         Book book;
-        
+
         /// <summary>
-        /// belirli bir kitaba tiklanildiginda acilan form, o kitaba ait bilgileri icerir.
+        /// When a specific book get double clicked, this form shows up
         /// </summary>
         /// <param name="_book"></param>
 
@@ -43,7 +43,7 @@ namespace Online_Book_Store_v2
             nupQuantity.Text = "01";
         }
 
-        private void btnAddCard_Click(object sender, EventArgs e) ///secilen belirli kitabın sepete eklemesini yapar
+        private void btnAddCard_Click(object sender, EventArgs e) ///Adds that book to shopping card
         {
             Logger.logger(book.name + " Form Addcart");
             if (nupQuantity.Text != "" && int.Parse(nupQuantity.Text) != 0)
@@ -72,15 +72,15 @@ namespace Online_Book_Store_v2
             }
         }
 
-        private void btnBack_Click(object sender, EventArgs e)///urun incelenmesinden cikar, geri donus butonu
+        private void btnBack_Click(object sender, EventArgs e)///Returns to Book Form
         {
             this.Close();
         }
-        public const int WM_NCLBUTTONDOWN = 0xA1; public const int HT_CAPTION = 0x2;[DllImportAttribute("user32.dll")]  //paneli hareket ettirmek için
+        public const int WM_NCLBUTTONDOWN = 0xA1; public const int HT_CAPTION = 0x2;[DllImportAttribute("user32.dll")]  ///You can move the form 
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);[DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
 
-        private void pnltop_MouseMove(object sender, MouseEventArgs e) ///formun yukarisindaki panel, formun hareketliliğini sağlar. mouse ile saga sola kaydirma vs.
+        private void pnltop_MouseMove(object sender, MouseEventArgs e) ///MouseMove event for upper panel to move the Form
         {
             Drag_Form(Handle, e);
         }

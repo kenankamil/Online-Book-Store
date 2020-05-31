@@ -15,27 +15,27 @@ using System.Drawing.Imaging;
 namespace Online_Book_Store_v2
 {
     /// <summary>
-    /// sepete eklenen ürünleri tutan class.
+    /// Contains products that added to shopping cart
     /// </summary>
     public class ShoppingCart
     {
 
         public List<ItemToPurchase> ItemsToPurchase;
-        //Customerın tüm elemanlarını içerir
+        
         public Customer Customer;
         public double PaymentAmount;
         public int PaymentType;
         ShoppingCartPanel shoppingPanel;
         List<ShoppingCardItemPanel> list;
         /// <summary>
-        /// classın constructorı.
+        /// Constructor
         /// </summary>
         public ShoppingCart()
         {
             ItemsToPurchase = new List<ItemToPurchase>();
         }
         /// <summary>
-        /// sipariş verildikten sonra fatura forumunun açılmasını sağlar.
+        /// Shows invoice
         /// </summary>
         /// <param name="shipmentAdress"></param>
         /// <param name="email"></param>
@@ -49,7 +49,7 @@ namespace Online_Book_Store_v2
             list.Clear();
         }
         /// <summary>
-        ///  ürünü listeden silen method.
+        ///  Deletes product from list
         /// </summary>
         /// <param name="item"></param>
         public void removeProduct(ItemToPurchase item)
@@ -66,14 +66,14 @@ namespace Online_Book_Store_v2
             refreshPanel();
         }
         /// <summary>
-        /// paneli yenileyen fonksiyon.
+        /// Refreshes the Panel
         /// </summary>
         public void refreshPanel()
         {
             shoppingPanel.fillPanel();
         }
         /// <summary>
-        /// ürünleri gösteren fonksiyon.
+        /// Shows the products
         /// </summary>
         /// <returns></returns>
         public List<ShoppingCardItemPanel> printProducts()
@@ -92,7 +92,7 @@ namespace Online_Book_Store_v2
         }
 
         /// <summary>
-        /// bütün ürünleri iptal eden fonksiyon.
+        /// Cancels all Orders
         /// </summary>
         public void CancelOrder()
         {

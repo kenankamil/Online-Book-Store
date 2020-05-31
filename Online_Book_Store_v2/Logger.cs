@@ -9,7 +9,7 @@ using System.Windows.Forms;
 namespace Online_Book_Store_v2
 {
     /// <summary>
-    /// kullanicinin program uzerinde tikladigi butonlar vs kayit altina alinir.
+    /// This Class saves every button click with Username, Button Info, Date and Time values.
     /// </summary>
     class Logger
     {

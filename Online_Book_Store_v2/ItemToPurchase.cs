@@ -8,10 +8,10 @@ namespace Online_Book_Store_v2
 {
 
     /// <summary>
-    /// satin alinacak itemler, miktari bu class icerisindedir
+    /// This class contains the quantity to items that purschased
     /// </summary>
 
-   public class ItemToPurchase
+    public class ItemToPurchase
     {
         private Product product;
         private int quantity;

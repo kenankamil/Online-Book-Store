@@ -8,9 +8,9 @@ using System.Drawing;
 namespace Online_Book_Store_v2
 {
     /// <summary>
-    /// musteri classi , uye verileri vs burada tanimlidir.
+    /// Customer class's attributes and methods
     /// </summary>
-   public class Customer
+    public class Customer
     {
         private long id;
         private string name;

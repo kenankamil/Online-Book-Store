@@ -10,13 +10,13 @@ using System.Windows.Forms;
 namespace Online_Book_Store_v2
 {
     /// <summary>
-    /// veri tabani baglantisini yapmak icin kullanilan class.
+    /// Database class's attributes and methods
     /// </summary>
     class DataBase
     {
         static private DataBase db;
         private DataBase() { }
-        ///nesne tanimlanmamis ise private yapilandiriciyi cagirarak nesneyi olusturur ve onu doner.
+        ///If object equals null, means no object, then creates an object and returns it.
         public static DataBase getInstance()
         {
             if (db == null)
@@ -24,7 +24,7 @@ namespace Online_Book_Store_v2
             return db;
         }
         SqlConnection sqlConnection = new SqlConnection("Data Source=den1.mssql7.gear.host;User ID=bookstoreprj;Password=Zc3nF5Ht2p!!");
-        public void CustomerUpdate(Customer customer) ///musteri bilgileri databasede guncellenir.
+        public void CustomerUpdate(Customer customer) ///Customer informations updates.
         {
             string record = "UPDATE CUSTOMER SET NAME=@NAME, ADDRESS=@ADDRESS, EMAIL=@EMAIL, PASSWORD=@PASSWORD, USERNAME=@USERNAME, PURCHASES=@PURCHASES where EMAIL=@EMAIL";
             db.sqlConnection.Open();
@@ -39,7 +39,7 @@ namespace Online_Book_Store_v2
             command.ExecuteNonQuery();
             db.sqlConnection.Close();
         }
-        public Customer CustomerHandler(string email, string password) ///musteri bilgileri giris yapilirken databaseden kontrol edilir.
+        public Customer CustomerHandler(string email, string password) ///Customer informations checks from database 
         {
             Customer customer = null;
             try
@@ -74,7 +74,7 @@ namespace Online_Book_Store_v2
             db.sqlConnection.Close();
             return customer;
         }
-        public List<Product> BookLoader() ///kitaplarin listesi, yuklemesi gerceklenir.
+        public List<Product> BookLoader() ///Books gets load
         {
             List<Product> booklist = new List<Product>();
             db.sqlConnection.Open();
@@ -101,7 +101,7 @@ namespace Online_Book_Store_v2
                 book.type = (string)sqlDataReader["CATEGORY"];
                 book.summary = (string)sqlDataReader["SUMMARY"];
                 
-                ///image islemleri
+                /// Image issues
                 try
                 {
                     book.image = Image.FromFile(Application.StartupPath + @"\Resources" + (string)sqlDataReader["IMAGEDEST"] + ".png");
@@ -115,7 +115,7 @@ namespace Online_Book_Store_v2
             db.sqlConnection.Close();
             return booklist;
         }
-        public List<Product> MusicCDLoader() ///albumlerin listesi, yuklemesi yapilir
+        public List<Product> MusicCDLoader() ///Musics gets Load
         {
             List<Product> musicList = new List<Product>();
             db.sqlConnection.Open();
@@ -138,7 +138,7 @@ namespace Online_Book_Store_v2
                 else
                     musicCd.discountedPrice = musicCd.price - (musicCd.price * musicCd.sale) / 100;
 
-                //image islemleri  
+                ///Image issues
                 try
                 {
                     musicCd.image = Image.FromFile(Application.StartupPath + @"\Resources" + (string)sqlDataReader["IMAGEDEST"] + ".png");
@@ -152,7 +152,7 @@ namespace Online_Book_Store_v2
             db.sqlConnection.Close();
             return musicList;
         }
-        public List<Product> MagazineLoader() ///dergilerin listesi, yuklemesi yapilir
+        public List<Product> MagazineLoader() ///Magazines gets load
         {
             List<Product> magazineList = new List<Product>();
             db.sqlConnection.Open();
@@ -175,7 +175,7 @@ namespace Online_Book_Store_v2
                 else
                     magazine.discountedPrice = magazine.price - (magazine.price * magazine.sale) / 100;
 
-                ///image islemleri
+                ///Image issues
                 try
                 {
                     magazine.image = Image.FromFile(Application.StartupPath + @"\Resources" + (string)sqlDataReader["IMAGEDEST"] + ".png");
@@ -189,7 +189,7 @@ namespace Online_Book_Store_v2
             db.sqlConnection.Close();
             return magazineList;
         }
-        public void DbUpdate(string[] values, string command) ///database update gerceklesir.
+        public void DbUpdate(string[] values, string command) ///database update 
         {
             sqlConnection.Open();
             SqlCommand sqlcommand = new SqlCommand(command, sqlConnection);
